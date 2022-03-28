@@ -16,6 +16,7 @@ import post1 from "../markdown/home.md";
 
 const Home = () => {
   const sections = [
+    { title: "Acceuil", url: "home" },
     { title: "Nous rejoindre", url: "join" },
     { title: "Histoire du Club", url: "history" },
     { title: "Records du Club", url: "ranking" },
