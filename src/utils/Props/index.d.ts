@@ -11,3 +11,23 @@ export type FeaturedPostProps = {
 export type MarkdownProps = {
   fileName: string;
 };
+
+export type SelectButtonProps = {
+  div?: React.HTMLAttributes<HTMLDivElement>;
+  className?: string;
+  menuItemsStyle?: SxProps<Theme>;
+  selectItems: {
+    inputLabel: { text: string; style?: SxProps<Theme> };
+    menuItems: { id: number | string; text: string }[];
+  };
+  onChange?: (e: SelectChangeEvent<string>) => void;
+  onClick?: (e: SelectChangeEvent<string>) => void;
+};
+
+export type HeaderProps = {
+  sections: ReadonlyArray<{
+    title: string;
+    url: string;
+  }>;
+  title: string;
+};
