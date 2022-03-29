@@ -1,28 +1,23 @@
 import react from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Header from "./Header";
-import MainFeaturedPost from "./MainFeaturedPost";
-import FeaturedPost from "./FeaturedPost";
 import Main from "./Main";
-import Sidebar from "./Sidebar";
 import Footer from "./Footer";
-import history from "../markdown/history.md";
-
+import historyEn from "../markdown/en/history.md";
+import historyFr from "../markdown/fr/history.md";
+import { useTranslation } from "react-i18next";
 const History = () => {
+  const { i18n } = useTranslation();
   const sections = [
     { title: "Acceuil", url: "home" },
     { title: "Nous rejoindre", url: "join" },
     { title: "Histoire du Club", url: "history" },
     { title: "Records du Club", url: "ranking" },
   ];
-
-  const posts = [history];
+  const historys = { en: historyEn, fr: historyFr };
+  const posts = [historys[i18n.language as keyof typeof historys]];
 
   const theme = createTheme();
   return (

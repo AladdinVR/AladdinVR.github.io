@@ -12,14 +12,16 @@ import FeaturedPost from "./FeaturedPost";
 import Main from "./Main";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
-import post1 from "../markdown/home.md";
+import post1 from "../markdown/en/home.md";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   const sections = [
-    { title: "Acceuil", url: "home" },
-    { title: "Nous rejoindre", url: "join" },
-    { title: "Histoire du Club", url: "history" },
-    { title: "Records du Club", url: "ranking" },
+    { title: t("home"), url: "home" },
+    { title: t("join"), url: "join" },
+    { title: t("history"), url: "history" },
+    { title: t("record"), url: "ranking" },
   ];
 
   const mainFeaturedPost = {
