@@ -5,39 +5,31 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-
-interface HeaderProps {
-  sections: ReadonlyArray<{
-    title: string;
-    url: string;
-  }>;
-  title: string;
-}
+import { HeaderProps } from "../../utils/Props";
+import LanguageSelector from "./LanguageSelector";
 
 const Header = (props: HeaderProps) => {
   const { sections, title } = props;
 
   return (
-    <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Button size="small">Subscribe</Button>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          sx={{ flex: 1 }}
+    <div>
+      <div id="container">
+        <Toolbar
+          component="nav"
+          variant="dense"
+          sx={{
+            borderBottom: 1,
+            borderColor: "divider",
+            justifyContent: "space-between",
+            overflowX: "auto",
+          }}
         >
-          {title}
-        </Typography>
-        <IconButton>
-          <SearchIcon />
-        </IconButton>
-        <Button variant="outlined" size="small">
-          Sign up
-        </Button>
-      </Toolbar>
+          <Typography component="h2" variant="h5" color="inherit">
+            {title}
+          </Typography>
+          <LanguageSelector />
+        </Toolbar>
+      </div>
       <Toolbar
         component="nav"
         variant="dense"
@@ -56,7 +48,7 @@ const Header = (props: HeaderProps) => {
           </Link>
         ))}
       </Toolbar>
-    </React.Fragment>
+    </div>
   );
 };
 
