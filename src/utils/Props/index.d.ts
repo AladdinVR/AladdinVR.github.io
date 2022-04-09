@@ -31,3 +31,17 @@ export type HeaderProps = {
   }>;
   title: string;
 };
+
+export type SidebarProps = {
+  archives?: ReadonlyArray<{
+    url: string;
+    title: string;
+  }>;
+  description: string;
+  social: ReadonlyArray<{
+    icon: React.ElementType;
+    name: string;
+    href: string;
+  }>;
+  title: string;
+};

@@ -4,35 +4,23 @@ import Stack from "@mui/material/Stack";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-
-interface SidebarProps {
-  archives: ReadonlyArray<{
-    url: string;
-    title: string;
-  }>;
-  description: string;
-  social: ReadonlyArray<{
-    icon: React.ElementType;
-    name: string;
-  }>;
-  title: string;
-}
+import { SidebarProps } from "../../utils/Props";
 
 const Sidebar = (props: SidebarProps) => {
-  const { archives, description, social, title } = props;
-
   return (
     <Grid item xs={12} md={4}>
       <Paper elevation={0} sx={{ p: 2, bgcolor: "grey.200" }}>
         <Typography variant="h6" gutterBottom>
-          {title}
+          {props.title}
         </Typography>
-        <Typography>{description}</Typography>
+        <Typography>{props.description}</Typography>
       </Paper>
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
-        Archives
-      </Typography>
-      {archives.map((archive) => (
+      {props.archives !== undefined && (
+        <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
+          Archives
+        </Typography>
+      )}
+      {props.archives?.map((archive) => (
         <Link
           display="block"
           variant="body1"
@@ -42,18 +30,19 @@ const Sidebar = (props: SidebarProps) => {
           {archive.title}
         </Link>
       ))}
+
       <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
         Social
       </Typography>
-      {social.map((network) => (
+      {props.social.map((network) => (
         <Link
           display="block"
           variant="body1"
-          href="#"
+          href={network.href}
           key={network.name}
           sx={{ mb: 0.5 }}
         >
-          <Stack direction="row" spacing={1} alignItems="center">
+          <Stack direction="row-reverse" spacing={1} alignItems="right">
             <network.icon />
             <span>{network.name}</span>
           </Stack>
