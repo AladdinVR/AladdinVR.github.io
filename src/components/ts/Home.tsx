@@ -56,9 +56,6 @@ const Home = () => {
   const homes = { en: homeEn, fr: homeFr };
   const posts = [homes[i18n.language as keyof typeof homes]];
   const sidebar = {
-    title: "About",
-    description:
-      "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.",
     social: [
       { name: "Instagram", icon: InstagramIcon, href: "http://myInsta.foo.fr" },
       { name: "Twitter", icon: TwitterIcon, href: "http://myTwitter.foo.fr" },
@@ -85,11 +82,7 @@ const Home = () => {
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
-            <Sidebar
-              title={sidebar.title}
-              description={sidebar.description}
-              social={sidebar.social}
-            />
+            <Sidebar social={sidebar.social} />
           </Grid>
         </main>
       </Container>

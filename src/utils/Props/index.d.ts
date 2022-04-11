@@ -37,11 +37,11 @@ export type SidebarProps = {
     url: string;
     title: string;
   }>;
-  description: string;
+  description?: string;
   social: ReadonlyArray<{
     icon: React.ElementType;
     name: string;
     href: string;
   }>;
-  title: string;
+  title?: string;
 };

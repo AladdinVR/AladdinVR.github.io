@@ -13,7 +13,7 @@ const Sidebar = (props: SidebarProps) => {
         <Typography variant="h6" gutterBottom>
           {props.title}
         </Typography>
-        <Typography>{props.description}</Typography>
+        <Typography>{props?.description}</Typography>
       </Paper>
       {props.archives !== undefined && (
         <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
