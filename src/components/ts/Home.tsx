@@ -17,6 +17,7 @@ const Home = () => {
     { title: t("home"), url: "home" },
     { title: t("join"), url: "join" },
     { title: t("history"), url: "history" },
+    { title: t("song"), url: "song" },
     { title: t("record"), url: "ranking" },
   ];
 

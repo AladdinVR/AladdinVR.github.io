@@ -1,10 +1,11 @@
 {
   "common": {
-    "home": "home",
+    "home": "Home",
     "join": "Join us",
     "history": "Club's history",
     "record": "Club's record",
     "lang": "language",
-    "networks": "Our networks"
+    "networks": "Our networks",
+    "song": "Our songs"
   }
 }

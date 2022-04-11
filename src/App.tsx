@@ -19,6 +19,7 @@ function App() {
           <Route path="/join" element={<Home />} />
           <Route path="/history" element={<History />} />
           <Route path="/ranking" element={<Home />} />
+          <Route path="/song" element={<Home />} />
         </Routes>
       </div>
     </Router>
