@@ -80,9 +80,9 @@ const Home = () => {
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
-            <Sidebar social={sidebar.social} />
+          <Grid sx={{ mt: 3 }}>
+            <Main posts={posts} />
+            {/* <Sidebar social={sidebar.social} /> */}
           </Grid>
         </main>
       </Container>

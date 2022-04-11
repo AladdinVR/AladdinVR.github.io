@@ -26,7 +26,7 @@ const History = () => {
       <Container maxWidth="lg">
         <Header title="Histoire" sections={sections} />
         <main>
-          <Main title="From the firehose" posts={posts} />
+          <Main posts={posts} />
         </main>
       </Container>
       <Footer

@@ -32,6 +32,10 @@ export type HeaderProps = {
   title: string;
 };
 
+export type MainProps = {
+  posts: ReadonlyArray<string>;
+};
+
 export type SidebarProps = {
   archives?: ReadonlyArray<{
     url: string;
