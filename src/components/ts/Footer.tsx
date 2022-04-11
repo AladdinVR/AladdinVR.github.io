@@ -2,7 +2,6 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import { FooterProps } from "../../utils/Props";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -10,8 +9,7 @@ import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import { useTranslation } from "react-i18next";
 
-const Footer = (props: FooterProps) => {
-  const { description, title } = props;
+const Footer = () => {
   const { t } = useTranslation();
   const social = [
     { name: "Instagram", icon: InstagramIcon, href: "http://myInsta.foo.fr" },

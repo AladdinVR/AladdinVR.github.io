@@ -1,10 +1,6 @@
-import react from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Header from "./Header";
 import MainFeaturedPost from "./MainFeaturedPost";
@@ -54,17 +50,6 @@ const Home = () => {
 
   const homes = { en: homeEn, fr: homeFr };
   const posts = [homes[i18n.language as keyof typeof homes]];
-  const sidebar = {
-    social: [
-      { name: "Instagram", icon: InstagramIcon, href: "http://myInsta.foo.fr" },
-      { name: "Twitter", icon: TwitterIcon, href: "http://myTwitter.foo.fr" },
-      {
-        name: "Facebook",
-        icon: FacebookIcon,
-        href: " myFacebook.foo.fr",
-      },
-    ],
-  };
 
   const theme = createTheme();
   return (
@@ -85,10 +70,7 @@ const Home = () => {
           </Grid>
         </main>
       </Container>
-      <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
-      />
+      <Footer />
     </ThemeProvider>
   );
 };
