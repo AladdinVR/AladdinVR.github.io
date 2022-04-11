@@ -9,12 +9,14 @@ import { SidebarProps } from "../../utils/Props";
 const Sidebar = (props: SidebarProps) => {
   return (
     <Grid item xs={12} md={4}>
-      <Paper elevation={0} sx={{ p: 2, bgcolor: "grey.200" }}>
-        <Typography variant="h6" gutterBottom>
-          {props.title}
-        </Typography>
-        <Typography>{props?.description}</Typography>
-      </Paper>
+      {props.title !== undefined && (
+        <Paper elevation={0} sx={{ p: 2, bgcolor: "grey.200" }}>
+          <Typography variant="h6" gutterBottom>
+            {props.title}
+          </Typography>
+          <Typography>{props?.description}</Typography>
+        </Paper>
+      )}
       {props.archives !== undefined && (
         <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
           Archives
