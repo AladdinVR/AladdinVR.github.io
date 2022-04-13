@@ -8,6 +8,7 @@ import {
 import "./App.css";
 import Home from "./components/ts/Home";
 import History from "./components/ts/History";
+import Records from "./components/ts/Records";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/join" element={<Home />} />
           <Route path="/history" element={<History />} />
-          <Route path="/ranking" element={<Home />} />
+          <Route path="/ranking" element={<Records />} />
           <Route path="/song" element={<Home />} />
         </Routes>
       </div>
