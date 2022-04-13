@@ -50,7 +50,7 @@ const Home = () => {
   ];
 
   const homes = { en: homeEn, fr: homeFr };
-  const posts = [homes[i18n.language as keyof typeof homes]];
+  const post = [homes[i18n.language as keyof typeof homes]];
 
   const theme = createTheme();
   return (
@@ -66,7 +66,7 @@ const Home = () => {
             ))}
           </Grid>
           <Grid sx={{ mt: 3 }}>
-            <Main posts={posts} />
+            <Main fileName={post} />
             {/* <Sidebar social={sidebar.social} /> */}
           </Grid>
         </main>

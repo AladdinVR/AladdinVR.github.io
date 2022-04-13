@@ -33,7 +33,7 @@ export type HeaderProps = {
 };
 
 export type MainProps = {
-  posts: ReadonlyArray<string>;
+  fileName: ReadonlyArray<string>;
 };
 
 export type SidebarProps = {

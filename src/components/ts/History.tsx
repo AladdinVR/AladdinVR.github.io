@@ -16,7 +16,7 @@ const History = () => {
     { title: "Records du Club", url: "ranking" },
   ];
   const historys = { en: historyEn, fr: historyFr };
-  const posts = [historys[i18n.language as keyof typeof historys]];
+  const post = [historys[i18n.language as keyof typeof historys]];
 
   const theme = createTheme();
   return (
@@ -25,7 +25,7 @@ const History = () => {
       <Container maxWidth="lg">
         <Header title="Histoire" sections={sections} />
         <main>
-          <Main posts={posts} />
+          <Main fileName={post} />
         </main>
       </Container>
       <Footer />

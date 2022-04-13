@@ -1,12 +1,18 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
-import Markdown from "./Markdown";
+import ReactMarkdown from "react-markdown";
 import { MainProps } from "../../utils/Props";
-
+import { useEffect, useState } from "react";
 const Main = (props: MainProps) => {
-  const { posts } = props;
-  console.log(posts);
+  const { fileName } = props;
+  const [post, setPost] = useState("");
+  useEffect(() => {
+    fetch(`${fileName}`)
+      .then((res) => res.text())
+      .then((res) => setPost(res))
+      .catch((err) => console.log(err));
+  });
   return (
     <Grid
       item
@@ -19,11 +25,7 @@ const Main = (props: MainProps) => {
       }}
     >
       <Divider />
-      {posts.map((post) => (
-        <div className="markdown" key={post.substring(0, 40)}>
-          <Markdown fileName={post} />
-        </div>
-      ))}
+      <ReactMarkdown children={post} />
     </Grid>
   );
 };
