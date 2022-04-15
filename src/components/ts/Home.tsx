@@ -51,7 +51,7 @@ const Home = () => {
 
   const homes = { en: homeEn, fr: homeFr };
   const post = [homes[i18n.language as keyof typeof homes]];
-
+  console.log(homes);
   const theme = createTheme();
   return (
     <ThemeProvider theme={theme}>

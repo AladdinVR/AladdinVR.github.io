@@ -7,7 +7,8 @@ const Markdown = (props: MarkdownProps) => {
   useEffect(() => {
     fetch(props.fileName)
       .then((res: { text: () => any }) => res.text())
-      .then((text: string) => setTextDisplayed(text));
+      .then((text: string) => setTextDisplayed(text))
+      .catch((error) => console.log(error));
   }, []);
   return <ReactMarkdown children={textDisplayed} />;
 };
