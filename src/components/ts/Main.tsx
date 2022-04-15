@@ -5,14 +5,16 @@ import ReactMarkdown from "react-markdown";
 import { MainProps } from "../../utils/Props";
 import { useEffect, useState } from "react";
 const Main = (props: MainProps) => {
-  const { fileName } = props;
+  console.log("main called");
   const [post, setPost] = useState("");
+  console.log(props.fileName);
+
   useEffect(() => {
-    fetch(`${fileName}`)
+    fetch(`${props.fileName}`)
       .then((res) => res.text())
       .then((res) => setPost(res))
       .catch((err) => console.log(err));
-  });
+  }, [props.fileName]);
   return (
     <Grid
       item

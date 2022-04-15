@@ -33,7 +33,7 @@ export type HeaderProps = {
 };
 
 export type MainProps = {
-  fileName: ReadonlyArray<string>;
+  fileName: string;
 };
 
 export type SidebarProps = {

@@ -4,6 +4,7 @@ import { MarkdownProps } from "../../utils/Props";
 
 const Markdown = (props: MarkdownProps) => {
   const [textDisplayed, setTextDisplayed] = useState("");
+  console.log(props.fileName);
   useEffect(() => {
     fetch(props.fileName)
       .then((res: { text: () => any }) => res.text())

@@ -7,16 +7,30 @@ import Footer from "./Footer";
 import historyEn from "../markdown/en/history.md";
 import historyFr from "../markdown/fr/history.md";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 const History = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [post, setPost] = useState("");
   const sections = [
-    { title: "Acceuil", url: "home" },
-    { title: "Nous rejoindre", url: "join" },
-    { title: "Histoire du Club", url: "history" },
-    { title: "Records du Club", url: "ranking" },
+    { title: t("home"), url: "home" },
+    { title: t("join"), url: "join" },
+    { title: t("history"), url: "history" },
+    { title: t("song"), url: "song" },
+    { title: t("record"), url: "ranking" },
   ];
-  const historys = { en: historyEn, fr: historyFr };
-  const post = [historys[i18n.language as keyof typeof historys]];
+  const historys = {
+    en: `https://aladdinvr.github.io${historyEn}`,
+    fr: `https://aladdinvr.github.io${historyFr}`,
+  };
+  useEffect(
+    () =>
+      setPost(
+        historys[i18n.language as keyof typeof historys] !== undefined
+          ? historys[i18n.language as keyof typeof historys]
+          : historys["fr"]
+      ),
+    [i18n.language]
+  );
 
   const theme = createTheme();
   return (

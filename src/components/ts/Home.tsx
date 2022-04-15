@@ -10,9 +10,11 @@ import Footer from "./Footer";
 import homeEn from "../markdown/en/home.md";
 import homeFr from "../markdown/fr/home.md";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const { t, i18n } = useTranslation();
+  const [post, setPost] = useState("");
   const sections = [
     { title: t("home"), url: "home" },
     { title: t("join"), url: "join" },
@@ -49,9 +51,19 @@ const Home = () => {
     },
   ];
 
-  const homes = { en: homeEn, fr: homeFr };
-  const post = [homes[i18n.language as keyof typeof homes]];
-  console.log(homes);
+  const homes = {
+    en: `https://aladdinvr.github.io${homeEn}`,
+    fr: `https://aladdinvr.github.io${homeFr}`,
+  };
+  useEffect(
+    () =>
+      setPost(
+        homes[i18n.language as keyof typeof homes] !== undefined
+          ? homes[i18n.language as keyof typeof homes]
+          : homes["fr"]
+      ),
+    [i18n.language]
+  );
   const theme = createTheme();
   return (
     <ThemeProvider theme={theme}>
