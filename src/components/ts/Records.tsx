@@ -8,12 +8,14 @@ import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import test from "../../utils/records/manIndividual.json";
 
 const Records = () => {
-  const { i18n } = useTranslation();
+  const { t } = useTranslation();
+  console.log(test);
   const sections = [
-    { title: "Acceuil", url: "home" },
-    { title: "Nous rejoindre", url: "join" },
-    { title: "Histoire du Club", url: "history" },
-    { title: "Records du Club", url: "ranking" },
+    { title: t("home"), url: "home" },
+    { title: t("join"), url: "join" },
+    { title: t("history"), url: "history" },
+    { title: t("song"), url: "song" },
+    { title: t("record"), url: "ranking" },
   ];
   const columns: GridColDef[] = [
     { field: "id", headerName: "ID", width: 90 },

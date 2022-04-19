@@ -1,0 +1,19 @@
+name: gh-pages publisher
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+            node-version: 17
+      - run: npm ci
+      - run: git config user.name "aladdinVR" && git config user.email "adrienberger66@gmail.com"
+      - run: npm run deploy
+        env:
+            GH_TOKEN: ${{secrets.SECRET_GITHUB_TOKEN}}

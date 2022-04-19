@@ -18,19 +18,18 @@ const History = () => {
     { title: t("song"), url: "song" },
     { title: t("record"), url: "ranking" },
   ];
-  const historys = {
-    en: `https://aladdinvr.github.io${historyEn}`,
-    fr: `https://aladdinvr.github.io${historyFr}`,
-  };
-  useEffect(
-    () =>
-      setPost(
-        historys[i18n.language as keyof typeof historys] !== undefined
-          ? historys[i18n.language as keyof typeof historys]
-          : historys["fr"]
-      ),
-    [i18n.language]
-  );
+
+  useEffect(() => {
+    const historys = {
+      en: `https://aladdinvr.github.io${historyEn}`,
+      fr: `https://aladdinvr.github.io${historyFr}`,
+    };
+    setPost(
+      historys[i18n.language as keyof typeof historys] !== undefined
+        ? historys[i18n.language as keyof typeof historys]
+        : historys["fr"]
+    );
+  }, [i18n.language]);
 
   const theme = createTheme();
   return (

@@ -51,19 +51,17 @@ const Home = () => {
     },
   ];
 
-  const homes = {
-    en: `https://aladdinvr.github.io${homeEn}`,
-    fr: `https://aladdinvr.github.io${homeFr}`,
-  };
-  useEffect(
-    () =>
-      setPost(
-        homes[i18n.language as keyof typeof homes] !== undefined
-          ? homes[i18n.language as keyof typeof homes]
-          : homes["fr"]
-      ),
-    [i18n.language]
-  );
+  useEffect(() => {
+    const homes = {
+      en: `https://aladdinvr.github.io${homeEn}`,
+      fr: `https://aladdinvr.github.io${homeFr}`,
+    };
+    setPost(
+      homes[i18n.language as keyof typeof homes] !== undefined
+        ? homes[i18n.language as keyof typeof homes]
+        : homes["fr"]
+    );
+  }, [i18n.language]);
   const theme = createTheme();
   return (
     <ThemeProvider theme={theme}>
