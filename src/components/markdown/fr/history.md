@@ -2,7 +2,7 @@
 
 _April 10, 2020 by [Olivier]_
 
-<!-- ![image info](/pictures/test.png) -->
+![image info](/pictures/test.png)
 
 This blog post shows a few different types of content that are supported and styled with
 Material styles. Basic typography, images, and code are all supported.
