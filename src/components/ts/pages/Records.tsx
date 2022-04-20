@@ -1,11 +1,11 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 import { useTranslation } from "react-i18next";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-import test from "../../utils/records/manIndividual.json";
+import test from "../../../utils/records/manIndividual.json";
 
 const Records = () => {
   const { t } = useTranslation();

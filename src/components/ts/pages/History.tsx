@@ -1,11 +1,11 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
-import historyEn from "../markdown/en/history.md";
-import historyFr from "../markdown/fr/history.md";
+import Header from "../Header";
+import Main from "../Main";
+import Footer from "../Footer";
+import historyEn from "../../markdown/en/history.md";
+import historyFr from "../../markdown/fr/history.md";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 const History = () => {
