@@ -1,6 +1,5 @@
 # Song domain French Version
-
-_April 10, 2020 by [Olivier]_
+This one of the first file you'll edit
 
 ![image info](/pictures/test.png)
 
