@@ -53,8 +53,8 @@ const Home = () => {
 
   useEffect(() => {
     const homes = {
-      en: `https://aladdinvr.github.io${homeEn}`,
-      fr: `https://aladdinvr.github.io${homeFr}`,
+      en: `${process.env.REACT_APP_CORE_ADDRESS}${homeEn}`,
+      fr: `${process.env.REACT_APP_CORE_ADDRESS}${homeFr}`,
     };
     setPost(
       homes[i18n.language as keyof typeof homes] !== undefined

@@ -21,8 +21,8 @@ const History = () => {
 
   useEffect(() => {
     const historys = {
-      en: `https://aladdinvr.github.io${historyEn}`,
-      fr: `https://aladdinvr.github.io${historyFr}`,
+      en: `${process.env.REACT_APP_CORE_ADDRESS}${historyEn}`,
+      fr: `${process.env.REACT_APP_CORE_ADDRESS}${historyFr}`,
     };
     setPost(
       historys[i18n.language as keyof typeof historys] !== undefined
