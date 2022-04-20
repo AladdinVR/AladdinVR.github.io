@@ -2,7 +2,7 @@ name: gh-pages publisher
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Olivia ]
 
 jobs:
   publish-gh-pages:
