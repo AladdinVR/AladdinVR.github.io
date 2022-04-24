@@ -54,3 +54,14 @@ export type FooterProps = {
   description: string;
   title: string;
 };
+
+export type RecordsProps = {
+  id: number;
+  swim: string;
+  length: string;
+  lastName: string;
+  firstName: string;
+  time: string;
+  place: string;
+  date: string;
+};
