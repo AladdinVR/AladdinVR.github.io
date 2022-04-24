@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ReactMarkdown from "markdown-to-jsx";
+import MuiMarkdown from "mui-markdown";
 import { MarkdownProps } from "../../utils/Props";
 
 const Markdown = (props: MarkdownProps) => {
@@ -11,6 +11,6 @@ const Markdown = (props: MarkdownProps) => {
       .then((text: string) => setTextDisplayed(text))
       .catch((error) => console.log(error));
   }, []);
-  return <ReactMarkdown children={textDisplayed} />;
+  return <MuiMarkdown children={textDisplayed} />;
 };
 export default Markdown;
