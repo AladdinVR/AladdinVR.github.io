@@ -17,20 +17,14 @@ export type SelectButtonProps = {
   className?: string;
   menuItemsStyle?: SxProps<Theme>;
   selectItems: {
-    inputLabel: { text: string; style?: SxProps<Theme> };
+    inputLabel: { text: string };
     menuItems: { id: number | string; text: string }[];
   };
   onChange?: (e: SelectChangeEvent<string>) => void;
   onClick?: (e: SelectChangeEvent<string>) => void;
 };
 
-export type HeaderProps = {
-  sections: ReadonlyArray<{
-    title: string;
-    url: string;
-  }>;
-  title: string;
-};
+
 
 export type MainProps = {
   fileName: string;
