@@ -12,7 +12,7 @@ import Records from "./components/ts/pages/Records";
 import Song from "./components/ts/pages/Song";
 import Join from "./components/ts/pages/Join";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="App">
@@ -27,6 +27,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
