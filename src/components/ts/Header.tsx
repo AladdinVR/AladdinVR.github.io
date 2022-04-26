@@ -1,12 +1,19 @@
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import { HeaderProps } from "../../utils/Props";
 import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
-const Header = (props: HeaderProps) => {
-  const { sections, title } = props;
-
+const Header = () => {
+  const title = "CNC";
+  const { t } = useTranslation();
+  const sections = [
+    { title: t("home"), url: "/home" },
+    { title: t("join"), url: "/join" },
+    { title: t("history"), url: "/history" },
+    { title: t("song"), url: "/song" },
+    { title: t("record"), url: "/ranking" },
+  ];
   return (
     <div>
       <div id="container">
@@ -34,7 +41,6 @@ const Header = (props: HeaderProps) => {
         {sections.map((section) => (
           <Link
             color="inherit"
-            noWrap
             key={section.title}
             variant="body2"
             href={section.url}
