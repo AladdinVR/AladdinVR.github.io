@@ -5,9 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { MainProps } from "../../utils/Props";
 import { useEffect, useState } from "react";
 const Main = (props: MainProps) => {
-  console.log("main called");
   const [post, setPost] = useState("");
-  console.log(props.fileName);
 
   useEffect(() => {
     fetch(`${props.fileName}`)
