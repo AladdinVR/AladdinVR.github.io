@@ -1,6 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Header from "../Header";
 import Footer from "../Footer";
 import { useTranslation } from "react-i18next";
@@ -19,18 +18,11 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Records = () => {
   const { t, i18n } = useTranslation();
-  console.log(i18n.language);
   const [rows, setRows] = useState<RecordsProps[]>();
   const [sex, setSex] = useState("male");
   const [category, setCategory] = useState("avenir");
   const [type, setType] = useState("individual");
-  const sections = [
-    { title: t("home"), url: "home" },
-    { title: t("join"), url: "join" },
-    { title: t("history"), url: "history" },
-    { title: t("song"), url: "song" },
-    { title: t("record"), url: "ranking" },
-  ];
+
   const columns: GridColDef[] = [
     {
       field: "swim",
@@ -283,14 +275,13 @@ const Records = () => {
       .catch((error) => console.log(error));
   }, [sex, category, type, i18n.language, t]);
 
-  const theme = createTheme();
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Records" sections={sections} />
+        <Header />
         {rows !== undefined && rows?.length !== 0 && (
-          <div style={{ height: "70vh", width: "100%", marginTop: "1vh" }}>
+          <div style={{ height: "74vh", width: "100%", marginTop: "1vh" }}>
             <DataGrid
               rows={rows}
               columns={columns}
@@ -308,7 +299,7 @@ const Records = () => {
         )}
       </Container>
       <Footer />
-    </ThemeProvider>
+    </>
   );
 };
 

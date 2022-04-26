@@ -9,25 +9,9 @@ const LanguageSelector: FunctionComponent<
   const { t, i18n } = useTranslation();
   return (
     <SelectButton
-      menuItemsStyle={{
-        color: "black",
-        backgroundColor: "rgba(255,255,255,0)",
-        borderRadius: "8px",
-        "& .MuiSelect-icon": { color: "black" },
-        ":hover": { background: "rgba(155,155,155,0.7)" },
-        "::after": { borderBottom: "None" },
-        "::before": { borderBottom: "None" },
-        maxWidth: "15ch",
-      }}
       selectItems={{
         inputLabel: {
           text: t("lang"),
-          style: {
-            color: "black",
-            "& #focus": {
-              color: "yellow",
-            },
-          },
         },
         menuItems: availableLanguages.map((lang, index) => {
           return { id: index, text: lang };
