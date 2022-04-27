@@ -8,8 +8,55 @@ export type FeaturedPostProps = {
   };
 };
 
+export type FooterProps = {
+  description: string;
+  title: string;
+};
+
+export type HeaderProps = {
+  setPage: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export type HomeProps = {
+  en: string;
+  fr: string;
+  setPage: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export type HistoryProps = {
+  en: string;
+  fr: string;
+  setPage: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export type JoinProps = {
+  en: string;
+  fr: string;
+  setPage: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export type MainProps = {
+  en: string;
+  fr: string;
+};
+
 export type MarkdownProps = {
   fileName: string;
+};
+
+export type RecordsProps = {
+  setPage: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export type RecordsRows = {
+  id: number;
+  swim: string;
+  length: string;
+  lastName: string;
+  firstName: string;
+  time: string;
+  place: string;
+  date: string;
 };
 
 export type SelectButtonProps = {
@@ -17,23 +64,11 @@ export type SelectButtonProps = {
   className?: string;
   menuItemsStyle?: SxProps<Theme>;
   selectItems: {
-    inputLabel: { text: string; style?: SxProps<Theme> };
+    inputLabel: { text: string };
     menuItems: { id: number | string; text: string }[];
   };
   onChange?: (e: SelectChangeEvent<string>) => void;
   onClick?: (e: SelectChangeEvent<string>) => void;
-};
-
-export type HeaderProps = {
-  sections: ReadonlyArray<{
-    title: string;
-    url: string;
-  }>;
-  title: string;
-};
-
-export type MainProps = {
-  fileName: string;
 };
 
 export type SidebarProps = {
@@ -50,7 +85,8 @@ export type SidebarProps = {
   title?: string;
 };
 
-export type FooterProps = {
-  description: string;
-  title: string;
+export type SongProps = {
+  en: string;
+  fr: string;
+  setPage: React.Dispatch<React.SetStateAction<string>>;
 };
