@@ -40,14 +40,13 @@ const themeOptions: ThemeOptions = {
     MuiContainer: {
       styleOverrides: {
         root: {
-          minHeight: "90vh",
+          minHeight: "100vh",
         },
       },
     },
   },
 };
 const theme = createTheme(themeOptions);
-
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     <React.StrictMode>

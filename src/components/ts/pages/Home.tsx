@@ -6,15 +6,9 @@ import MainFeaturedPost from "../MainFeaturedPost";
 import FeaturedPost from "../FeaturedPost";
 import Main from "../Main";
 import Footer from "../Footer";
-import homeEn from "../../markdown/en/home.md";
-import homeFr from "../../markdown/fr/home.md";
-import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
+import { HomeProps } from "../../../utils/Props";
 
-const Home = () => {
-  const { i18n } = useTranslation();
-  const [post, setPost] = useState("");
-
+const Home = (props: HomeProps) => {
   const mainFeaturedPost = {
     title: "Title of a longer featured blog post",
     description:
@@ -43,17 +37,6 @@ const Home = () => {
     },
   ];
 
-  useEffect(() => {
-    const homes = {
-      en: `${process.env.REACT_APP_CORE_ADDRESS}${homeEn}`,
-      fr: `${process.env.REACT_APP_CORE_ADDRESS}${homeFr}`,
-    };
-    setPost(
-      homes[i18n.language as keyof typeof homes] !== undefined
-        ? homes[i18n.language as keyof typeof homes]
-        : homes["fr"]
-    );
-  }, [i18n.language]);
   return (
     <>
       <CssBaseline />
@@ -66,7 +49,7 @@ const Home = () => {
           ))}
         </Grid>
         <Grid sx={{ mt: 3 }}>
-          <Main fileName={post} />
+          <Main {...props} />
         </Grid>
       </Container>
       <Footer />

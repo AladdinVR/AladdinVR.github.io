@@ -24,10 +24,9 @@ export type SelectButtonProps = {
   onClick?: (e: SelectChangeEvent<string>) => void;
 };
 
-
-
 export type MainProps = {
-  fileName: string;
+  en: string;
+  fr: string;
 };
 
 export type SidebarProps = {
@@ -58,4 +57,24 @@ export type RecordsProps = {
   time: string;
   place: string;
   date: string;
+};
+
+export type HomeProps = {
+  en: string;
+  fr: string;
+};
+
+export type JoinProps = {
+  en: string;
+  fr: string;
+};
+
+export type HistoryProps = {
+  en: string;
+  fr: string;
+};
+
+export type SongProps = {
+  en: string;
+  fr: string;
 };
