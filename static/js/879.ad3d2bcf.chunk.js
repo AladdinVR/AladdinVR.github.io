@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcnc=self.webpackChunkcnc||[]).push([[879],{1879:function(n,t,e){e.r(t),e.d(t,{default:function(){return u.Z},getTableUtilityClass:function(){return c.K},tableClasses:function(){return c.Z}});var u=e(5416),c=e(5275)}}]);
