@@ -9,7 +9,7 @@ const History = (props: HistoryProps) => {
   return (
     <CssBaseline>
       <Container maxWidth="lg">
-        <Header />
+        <Header setPage={props.setPage} />
         <Main {...props} />
       </Container>
       <Footer />

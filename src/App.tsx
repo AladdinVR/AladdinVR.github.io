@@ -1,10 +1,4 @@
 import React, { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Navigate,
-  Route,
-  Routes,
-} from "react-router-dom";
 import "./App.css";
 import Home from "./components/ts/pages/Home";
 import History from "./components/ts/pages/History";
@@ -38,7 +32,21 @@ const App = () => {
     join: { en: "", fr: "" },
     song: { en: "", fr: "" },
   });
-
+  const [page, setPage] = useState("home");
+  const pageRenderer = (page: string) => {
+    switch (page) {
+      case "history":
+        return <History {...markdowns.history} setPage={setPage} />;
+      case "join":
+        return <Join {...markdowns.join} setPage={setPage} />;
+      case "song":
+        return <Song {...markdowns.song} setPage={setPage} />;
+      case "ranking":
+        return <Records setPage={setPage} />;
+      default:
+        return <Home {...markdowns.home} setPage={setPage} />;
+    }
+  };
   useEffect(() => {
     const keys = ["history", "home", "join", "song"];
     keys.forEach((document) => {
@@ -70,21 +78,8 @@ const App = () => {
         .catch((error) => console.log(error));
     });
   }, []);
-  console.log("coucou");
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="*" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home {...markdowns.home} />} />
-          <Route path="/join" element={<Join {...markdowns.join} />} />
-          <Route path="/history" element={<History {...markdowns.history} />} />
-          <Route path="/ranking" element={<Records />} />
-          <Route path="/song" element={<Song {...markdowns.song} />} />
-        </Routes>
-      </div>
-    </Router>
-  );
+
+  return <div className="App">{pageRenderer(page)}</div>;
 };
 
 export default App;

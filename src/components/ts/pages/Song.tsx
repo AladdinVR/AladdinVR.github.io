@@ -10,7 +10,7 @@ const Song = (props: SongProps) => {
   return (
     <CssBaseline>
       <Container maxWidth="lg">
-        <Header />
+        <Header setPage={props.setPage} />
         <Main {...props} />
       </Container>
       <Footer />

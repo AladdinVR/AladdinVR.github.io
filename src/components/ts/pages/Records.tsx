@@ -12,11 +12,11 @@ import {
   GridToolbarDensitySelector,
 } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
-import { RecordsProps } from "../../../utils/Props";
+import { RecordProps, RecordsProps } from "../../../utils/Props";
 import { MenuItem, Select, Toolbar, Tooltip, Typography } from "@mui/material";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-const Records = () => {
+const Records = (props: RecordProps) => {
   const { t, i18n } = useTranslation();
   const [rows, setRows] = useState<RecordsProps[]>();
   const [sex, setSex] = useState("male");
@@ -279,7 +279,7 @@ const Records = () => {
     <>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header />
+        <Header setPage={props.setPage} />
         {rows !== undefined && rows?.length !== 0 && (
           <div style={{ height: "74vh", width: "100%", marginTop: "1vh" }}>
             <DataGrid

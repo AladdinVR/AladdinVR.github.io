@@ -41,7 +41,7 @@ const Home = (props: HomeProps) => {
     <>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header />
+        <Header setPage={props.setPage} />
         <MainFeaturedPost post={mainFeaturedPost} />
         <Grid container spacing={4}>
           {featuredPosts.map((post) => (

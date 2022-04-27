@@ -3,16 +3,17 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
+import { HeaderProps } from "../../utils/Props";
 
-const Header = () => {
+const Header = (props: HeaderProps) => {
   const title = "CNC";
   const { t } = useTranslation();
   const sections = [
-    { title: t("home"), url: "/home" },
-    { title: t("join"), url: "/join" },
-    { title: t("history"), url: "/history" },
-    { title: t("song"), url: "/song" },
-    { title: t("record"), url: "/ranking" },
+    { title: t("home"), dest: "home" },
+    { title: t("join"), dest: "join" },
+    { title: t("history"), dest: "history" },
+    { title: t("song"), dest: "song" },
+    { title: t("record"), dest: "ranking" },
   ];
   return (
     <div>
@@ -43,8 +44,9 @@ const Header = () => {
             color="inherit"
             key={section.title}
             variant="body2"
-            href={section.url}
+            onClick={() => props.setPage(section.dest)}
             sx={{ p: 1, flexShrink: 0 }}
+            style={{ cursor: "pointer " }}
           >
             {section.title}
           </Link>

@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@emotion/react";
-import { createTheme, ThemeOptions } from "@mui/material";
+import { createTheme, CssBaseline, ThemeOptions } from "@mui/material";
 
 const themeOptions: ThemeOptions = {
   palette: {
@@ -18,7 +18,7 @@ const themeOptions: ThemeOptions = {
       main: "#9e9e9e",
     },
     background: {
-      default: "rgba(225,225,225,0)",
+      default: "rgba(225,225,225,0.5)",
       paper: "#d1d1d1",
     },
     text: {
@@ -49,9 +49,8 @@ const themeOptions: ThemeOptions = {
 const theme = createTheme(themeOptions);
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <CssBaseline />
+    <App />
   </ThemeProvider>,
   document.getElementById("root")
 );
