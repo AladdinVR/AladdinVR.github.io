@@ -12,13 +12,13 @@ import {
   GridToolbarDensitySelector,
 } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
-import { RecordProps, RecordsProps } from "../../../utils/Props";
+import { RecordsProps, RecordsRows } from "../../../utils/Props";
 import { MenuItem, Select, Toolbar, Tooltip, Typography } from "@mui/material";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-const Records = (props: RecordProps) => {
+const Records = (props: RecordsProps) => {
   const { t, i18n } = useTranslation();
-  const [rows, setRows] = useState<RecordsProps[]>();
+  const [rows, setRows] = useState<RecordsRows[]>();
   const [sex, setSex] = useState("male");
   const [category, setCategory] = useState("avenir");
   const [type, setType] = useState("individual");
@@ -252,7 +252,7 @@ const Records = (props: RecordProps) => {
   };
 
   useEffect(() => {
-    const rows: RecordsProps[] = [];
+    const rows: RecordsRows[] = [];
     fetch(`/records/${type}/${sex}/${category}.csv`)
       .then((res: { text: () => any }) => res.text())
       .then((text: string) => {
@@ -289,8 +289,8 @@ const Records = (props: RecordProps) => {
               components={{
                 Toolbar: CustomToolbar,
               }}
+              hideFooter
               pageSize={rows.length}
-              rowsPerPageOptions={[5, 10, rows.length]}
               localeText={
                 gridLanguage[i18n.language as keyof typeof gridLanguage]
               }
