@@ -4,8 +4,12 @@ import Header from "../Header";
 import Main from "../Main";
 import Footer from "../Footer";
 import { HistoryProps } from "../../../utils/Props";
+import { useEffect } from "react";
 
 const History = (props: HistoryProps) => {
+  useEffect(() => {
+    localStorage.setItem("page", "history");
+  }, []);
   return (
     <CssBaseline>
       <Container maxWidth="lg">

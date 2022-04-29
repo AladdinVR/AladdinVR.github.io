@@ -13,7 +13,14 @@ import {
 } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
 import { RecordsProps, RecordsRows } from "../../../utils/Props";
-import { MenuItem, Select, Toolbar, Tooltip, Typography } from "@mui/material";
+import {
+  ClickAwayListener,
+  MenuItem,
+  Select,
+  Toolbar,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Records = (props: RecordsProps) => {
@@ -22,6 +29,7 @@ const Records = (props: RecordsProps) => {
   const [sex, setSex] = useState("male");
   const [category, setCategory] = useState("avenir");
   const [type, setType] = useState("individual");
+  const [openTip, setOpenTip] = useState(false);
 
   const columns: GridColDef[] = [
     {
@@ -205,48 +213,53 @@ const Records = (props: RecordsProps) => {
             <MenuItem value={"cadetJunior"}>Cadet/Junior/Senior</MenuItem>
           </Select>
         )}
-
-        <Tooltip
-          disableFocusListener
-          disableTouchListener
-          title={
-            <>
-              <Typography>{t("catIntro")}</Typography>
-              <Typography>
-                {t("catAvenirs", { year: `${year - 9}` })}
-              </Typography>
-              <Typography>
-                {t("catPoussins", {
-                  startYear: `${year - 10}`,
-                  endYear: `${year - 11}`,
-                })}
-              </Typography>
-              <Typography>
-                {t("catBenjamins", {
-                  startYear: `${year - 12}`,
-                  endYear: `${year - 13}`,
-                })}
-              </Typography>
-              <Typography>
-                {t("catMinimes", {
-                  startYear: `${year - 14}`,
-                  endYear: `${year - 15}`,
-                })}
-              </Typography>
-              <Typography>
-                {t("catCadets", {
-                  startYear: `${year - 16}`,
-                  endYear: `${year - 17}`,
-                })}
-              </Typography>
-              <Typography>
-                {t("catJuniors", { year: `${year - 9}` })}
-              </Typography>
-            </>
-          }
-        >
-          <InfoOutlinedIcon fontSize="large" />
-        </Tooltip>
+        <ClickAwayListener onClickAway={() => setOpenTip(false)}>
+          <Tooltip
+            open={openTip}
+            style={{ cursor: "pointer" }}
+            placement={"left"}
+            title={
+              <>
+                <Typography>{t("catIntro")}</Typography>
+                <Typography>
+                  {t("catAvenirs", { year: `${year - 9}` })}
+                </Typography>
+                <Typography>
+                  {t("catPoussins", {
+                    startYear: `${year - 10}`,
+                    endYear: `${year - 11}`,
+                  })}
+                </Typography>
+                <Typography>
+                  {t("catBenjamins", {
+                    startYear: `${year - 12}`,
+                    endYear: `${year - 13}`,
+                  })}
+                </Typography>
+                <Typography>
+                  {t("catMinimes", {
+                    startYear: `${year - 14}`,
+                    endYear: `${year - 15}`,
+                  })}
+                </Typography>
+                <Typography>
+                  {t("catCadets", {
+                    startYear: `${year - 16}`,
+                    endYear: `${year - 17}`,
+                  })}
+                </Typography>
+                <Typography>
+                  {t("catJuniors", { year: `${year - 9}` })}
+                </Typography>
+              </>
+            }
+          >
+            <InfoOutlinedIcon
+              fontSize="large"
+              onClick={() => setOpenTip(!openTip)}
+            />
+          </Tooltip>
+        </ClickAwayListener>
       </Toolbar>
     );
   };
@@ -275,6 +288,9 @@ const Records = (props: RecordsProps) => {
       .catch((error) => console.log(error));
   }, [sex, category, type, i18n.language, t]);
 
+  useEffect(() => {
+    localStorage.setItem("page", "ranking");
+  }, []);
   return (
     <>
       <CssBaseline />

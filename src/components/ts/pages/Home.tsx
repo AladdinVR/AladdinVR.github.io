@@ -7,6 +7,7 @@ import FeaturedPost from "../FeaturedPost";
 import Main from "../Main";
 import Footer from "../Footer";
 import { HomeProps } from "../../../utils/Props";
+import { useEffect } from "react";
 
 const Home = (props: HomeProps) => {
   const mainFeaturedPost = {
@@ -37,6 +38,9 @@ const Home = (props: HomeProps) => {
     },
   ];
 
+  useEffect(() => {
+    localStorage.setItem("page", "home");
+  }, []);
   return (
     <>
       <CssBaseline />

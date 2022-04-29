@@ -4,9 +4,12 @@ import Header from "../Header";
 import Main from "../Main";
 import Footer from "../Footer";
 import { SongProps } from "../../../utils/Props";
+import { useEffect } from "react";
 
 const Song = (props: SongProps) => {
-  console.log(props);
+  useEffect(() => {
+    localStorage.setItem("page", "song");
+  }, []);
   return (
     <CssBaseline>
       <Container maxWidth="lg">

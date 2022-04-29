@@ -32,7 +32,8 @@ const App = () => {
     join: { en: "", fr: "" },
     song: { en: "", fr: "" },
   });
-  const [page, setPage] = useState("home");
+  const currentPage = localStorage.getItem("page");
+  const [page, setPage] = useState(currentPage !== null ? currentPage : "home");
   const pageRenderer = (page: string) => {
     switch (page) {
       case "history":
