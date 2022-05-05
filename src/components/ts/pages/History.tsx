@@ -5,6 +5,7 @@ import Main from "../Main";
 import Footer from "../Footer";
 import { HistoryProps } from "../../../utils/Props";
 import { useEffect } from "react";
+import "../../css/History.css";
 
 const History = (props: HistoryProps) => {
   useEffect(() => {

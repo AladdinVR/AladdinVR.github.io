@@ -31,6 +31,23 @@ const themeOptions: ThemeOptions = {
     h1: {
       fontWeight: 300,
       fontFamily: "serif",
+      fontSize: "3rem",
+    },
+    h2: {
+      fontWeight: 300,
+      fontFamily: "serif",
+      fontSize: "2rem",
+    },
+    h3: {
+      fontWeight: 300,
+      fontFamily: "serif",
+      fontSize: "2rem",
+    },
+    body1: {
+      fontSize: "1rem",
+    },
+    allVariants: {
+      textAlign: "left",
     },
   },
   shape: {
