@@ -1,48 +1,27 @@
-# Join domain French Version
+# Bienvenue à bord !
 
-_April 10, 2020 by [Olivier]_
+Le club c'est avant tout un endroit idéal pour passer un été sportif est très enrichissant ! Que ce soit physiquement, mentalement ou relationnellement parlant ! Les seules choses dont vous aurez besoin sont (attention la liste est très longue) :
 
-![image info](/pictures/test.png)
+- Un maillot de bain
+- Un bonnet de bain
+- Des lunettes de piscine
+- Un gourde (remplie évidemment)
+- Un grand sourire
+- De la motivation
 
-This blog post shows a few different types of content that are supported and styled with
-Material styles. Basic typography, images, and code are all supported.
-You can extend these by modifying `Markdown.js`.
+Et voilà ! Avec le temps il sera possible d'acheter un peu plus de matériel comme un pull ou des plaquettes.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Concernant les horaires ils dépendent de la période de l'année et de votre niveau:
 
-Curabitur blandit tempus porttitor. **Nullam quis risus eget urna mollis** ornare vel eu leo.
-Nullam id dolor id nibh ultricies vehicula ut id elit.
+- En juin :
+  - de 18h00 à 19h00 pour le groupe loisir
+  - de 18h30 à 20h00 pour le groupe compétition
+- En juillet (à partir du début des vacances scolaires) et en août :
+  - de 18h30 à 19h30 pour le groupe loisir
+  - de 19h à 20h30 pour le groupe compétition
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-Aenean lacinia bibendum nulla sed consectetur.
+Les deux groupes ci-dessus permettent aux différents nageurs de progresser à leur rythme, cela n'empêche pas les enfants du groupe loisir de faire des compétitions avec les autres, bien au contraire !
 
-## Heading
+Si vous avez des questions, le plus simple est de venir directement nous voir pendant un entraînement pour faire un essaie (c'est gratuit en plus !). Vous pouvez également nous envoyer un mail à <a href="mailto:cnc66400@gmail.com">cette adresse</a> !
 
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-### Sub-heading 1
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-### Sub-heading 2
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-sit amet risus.
-
-- Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-- Donec id elit non mi porta gravida at eget metus.
-- Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-1. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-1. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+À bientôt sur les bords du bassin !
