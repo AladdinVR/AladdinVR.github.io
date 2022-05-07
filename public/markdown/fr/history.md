@@ -44,7 +44,7 @@ En quelques années le club était déjà très redouté dans le département. L
 
 Dans la deuxième moitié des années soixante-dix le club eut sa première interruption, très vite repris en main l’année suivante avec le retour de Claire à la piscine de Céret.
 
-<img src="/pictures/photo70.jpg" alt="club's picture in 70's" style="width:50vw"/>
+<img src="/pictures/history/photo70.jpg" alt="club's picture in 70's" />
 
 ## Les années 80
 
@@ -56,7 +56,7 @@ Des rencontres amicales avec Caldes de Malavella et surtout des "12 heures de na
 Les rencontres départementales continuent leur train-train, mais on s’aperçoit très vite que la natation estivale n’a aucun avenir dans le département. Le club se mettra en fonctionnement "loisir" vers la fin des années 80, tout en organisant des "12h de natation" à la piscine de Céret made in Catalogne sud. Il lance aussi l’organisation de journées "Portes Ouvertes" avec des jeux pour tous et les premiers échanges avec le club de Cerbère au niveau du Water Polo.
 Le club change une nouvelle fois de nom et devient ce qu’il est aujourd’hui : Le Cercle des Nageurs Cérétans.
 
-<img src="/pictures/photo80.jpg" alt="club's picture in 80's" style="width:50vw"/>
+<img src="/pictures/history/photo80.jpg" alt="club's picture in 80's" />
 
 ## Les années 90
 
@@ -79,7 +79,7 @@ Les rencontres se faisaient en Catalogne Sud avec les clubs de : Castelfollit de
 
 Pour la petite histoire avant d’aller nager avec la Fédé Catalane il y avait dans le département 7 clubs d’été : Thuir, Prades, Ille sur têt, St Paul de Fenouillet, Cerbère et Céret. Lorsque nous sommes revenus à la fédération Française de natation dans la deuxième moitié des années 90, la surprise fut grande : il ne reste plus que 3 clubs d’été dans le département : Amélie, Thuir et Céret dont 2 clubs extrêmement malades.
 Tout ceci sous le regard bienveillant de notre comité départemental, que je soupçonne de ne pas savoir qu’en 2003 le Cercle des Nageurs Cérétans fête ses 30 ANS !!!
-<img src="/pictures/photo90.jpg" alt="club's picture in 90's" style="width:50vw"/>
+<img src="/pictures/history/photo90.jpg" alt="club's picture in 90's" />
 
 ## Les années 2000
 
@@ -87,8 +87,8 @@ Tout ceci sous le regard bienveillant de notre comité départemental, que je so
 
 Le club de Céret est alors une référence dans le milieu de la natation estivale. Au niveau régional le club cumule les premières places aux championnats régionaux. La bonne humeur et l’esprit famille qui y règnent font revenir les nageurs et nageuses chaque année. Les chants de supporters résonnent sur les bords des bassins. Au niveau national, le club réussi chaque année à qualifier une dizaine de ses jeunes entre 13 et 16 ans au championnat de France de natation estivale, pour représenter la région du Languedoc-Roussillon (et maintenant Occitanie...).
 
-<img src="/pictures/photoFeria.jpg" alt="club's picture during the Feria" style="width:50vw"/>
+<img src="/pictures/history/photoFeria.jpg" alt="club's picture during the Feria" />
 
 Tout ceci grâce à l’esprit de famille qui se développe dans le club grâce aux nombreuses activités organisées tout au long de l’été. Les entraînements, les stages, la randonnée des Salines, le relais des familles, l’organisation de la feria de Céret. Tant de traditions qui permettent aux différents membres du club, parents comme enfants, de se retrouver.
 
-<img src="/pictures/photo2010.jpg" alt="club's picture in 2010" style="width:50vw"/>
+<img src="/pictures/history/photo2010.jpg" alt="club's picture in 2010" />

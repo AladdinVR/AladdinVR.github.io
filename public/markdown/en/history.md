@@ -44,7 +44,7 @@ Within a few years the club was already very popular in the department. The acti
 
 In the second half of the seventies the club had its first interruption, very quickly resumed the following year with the return of Claire to the pool of Céret.
 
-<img src="/pictures/photo70.jpg" alt="club's picture in 70's" style="width:50vw"/>
+<img src="/pictures/history/photo70.jpg" alt="club's picture in 70's" />
 
 ## The 1980s
 
@@ -56,7 +56,7 @@ Friendly meetings with Caldes de Malavella and especially the "12 hours of swimm
 The departmental meetings continued their routine, but it soon became clear that summer swimming had no future in the department. The club started to operate as a "leisure" club towards the end of the 1980s, while organising "12 hours of swimming" at the Céret swimming pool made in southern Catalonia. It also launched the organisation of "Open Days" with games for all and the first exchanges with the club of Cerbère for Water Polo.
 The club changes its name once again and becomes what it is today: Le Cercle des Nageurs Cérétans.
 
-<img src="/pictures/photo80.jpg" alt="club's picture in 80's" style="width:50vw"/>
+<img src="/pictures/history/photo80.jpg" alt="club's picture in 80's" />
 
 ## The 90s
 
@@ -79,7 +79,7 @@ The meetings were held in Southern Catalonia with the clubs of : Castelfollit de
 
 For the record, before going to swim with the Catalan Federation there were 7 summer clubs in the department: Thuir, Prades, Ille sur Têt, St Paul de Fenouillet, Cerbère and Céret. When we came back to the French Swimming Federation in the second half of the 90's, the surprise was great: there are only 3 summer clubs left in the department: Amélie, Thuir and Céret, two of which were extremely sick.
 All this under the benevolent gaze of our departmental committee, which I suspect does not know that in 2003 the Cercle des Nageurs Cérétans celebrates its 30 YEARS!!!
-<img src="/pictures/photo90.jpg" alt="club's picture in 90's" style="width:50vw"/>
+<img src="/pictures/history/photo90.jpg" alt="club's picture in 90's" />
 
 ## The 2000s
 
@@ -87,8 +87,8 @@ All this under the benevolent gaze of our departmental committee, which I suspec
 
 The Céret club is now a reference in the world of summer swimming. At the regional level the club accumulates the first places in the regional championships. The good mood and the family spirit that reign there make swimmers come back every year. The songs of the supporters resound on the banks of the pools. At the national level, the club succeeds each year in qualifying a dozen of its youngsters between 13 and 16 years old for the French summer swimming championships, to represent the Languedoc-Roussillon region (and now Occitanie...).
 
-<img src="/pictures/photoFeria.jpg" alt="club's picture during the Feria" style="width:50vw"/>
+<img src="/pictures/history/photoFeria.jpg" alt="club's picture during the Feria" />
 
 All this is thanks to the family spirit that develops in the club thanks to the many activities organised throughout the summer. Training sessions, courses, the Salines hike, the family relay, the organisation of the Céret feria. So many traditions that allow the different members of the club, parents as well as children, to get together.
 
-<img src="/pictures/photo2010.jpg" alt="club's picture in 2010" style="width:50vw"/>
+<img src="/pictures/history/photo2010.jpg" alt="club's picture in 2010" />
