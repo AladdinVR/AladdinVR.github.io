@@ -28,7 +28,8 @@ const Header = (props: HeaderProps) => {
             overflowX: "auto",
           }}
         >
-          <Typography component="h2" variant="h5" color="inherit">
+          <img src="/favicon.ico" alt="Club's logo" style={{ width: "3vw" }} />
+          <Typography component="h2" variant="h4" color="inherit">
             {title}
           </Typography>
           <LanguageSelector />
