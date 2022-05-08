@@ -13,6 +13,8 @@ Pour modifier le site directement, sans faire de tests au prélable, assurez-vou
 
 ![Tuto Branche Main](./TutoBrancheMain.png)
 
+Vous aurez besoin d'être ajouté au projet en tant qu'éditeur, pour se faire contactez un administrateur du projet et demandez lui de vous rajouter.
+
 Tout se passe dans le dossier `public`:
 
 ### Modifier du texte:
@@ -79,3 +81,27 @@ Pour les autres relayeurs:
 **,,Nom,Prénom**
 
 Et comme d'habitude, une fois que le fichier est modifié, vous pouvez commit le changement.
+
+Voilà, je pense avoir fait le tout ce qu'on pouvait faire sans faire de code. Amusez-vous bien ! N'hésitez pas à me [contacter](mailto:adrienberger66@gmail.com)en cas de question.
+
+## Modifier le code:
+
+Là on va rentrer dans le vif du sujet. Je vais d'abord vous présenter la structure du code, puis je vous expliquerai comment contribuer.
+
+### Les technologies utilisées:
+
+Pour commencer voici une liste des technologies que nous utilisons dans ce projet:
+
+- Le `markdown` qui permet d'écrire les articles (plus de détail plus haut)
+- Le `html et le css` ce sont les langages qui permettent à votre navigateur de savoir comment afficher le contenu de votre page. Ces langages sont très complets mais sont souvent lourd. Pour gagner du temps on utilise donc des langages qui se basent sur ces derniers et qui "écrivent du html à notre place".
+- Le `javascript` et un langage qui se base sur le html et le css pour afficher du contenu web mais qui permet aussi de faire des choses plus complexes (comme exécuter des scripts par exemple). C'est le langage de base de notre application.
+- Le `typescript` est une surcouche de javascript qui _type_ le javascript. C'est à dire qu'elle ajoute des informations quand on crée des variables (on précise que c'est une chaîne de caractères par exemple). C'est extrèmement pratique pour se prémunir d'erreurs et pour bien comprendre ce qu'on manipule. Le site est actuellement basé sur typescript.
+- Le `React` est une surcouche de typescript (ou javascript) qui permet de gérer plus intuitivement les intéractions entre le html et javascript. C'est ce qu'on appelle un `framework`.
+- La librairie de React `MaterialUI` qui est un framework css (c'est donc une librairie qui écrit du css pour nous). Et qui nous permet d'avoir un joli rendu.
+
+Pour vous former sur ces différentes technologies voici des liens utiles:
+
+- [pour typecript](https://www.codecademy.com/learn/learn-typescript)
+- [pour React](https://fr.reactjs.org/tutorial/tutorial.html)
+
+Voici la structure de notre dossier :
