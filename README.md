@@ -62,13 +62,13 @@ Ce dossier contient les records du club, il est rangé comme suit :
 
 Voici la structure d'un fichier csv:
 
-#### Pour les épreuves individuelles :
+1. Pour les épreuves individuelles :
 
 **nom de la nage(en anglais),distance,Nom,Prénom,temps(min:secondes.centièmes),lieu,date(jj/mm/aaaa)**
 
 Attention à bien respecter la structure de se fichier, sinon les données ne s'afficheront pas correctement.
 
-#### Pour les épreuves en relais :
+2. Pour les épreuves en relais :
 
 Pour le premier relayeur :
 
