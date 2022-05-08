@@ -58,7 +58,7 @@ Ce dossier contient les records du club, il est rangé comme suit :
 
 - male/female/mixt pour distinguer le sexe des personnes qui ont fait un record (à noter que mixt n'est actuellement là que pour le 10x50m NL)
 
-- nom*de_la_catégorie.csv : le fichier qui contient les records d'une certaine catégorie. Pour la culture, csv signigie \_coma separated values* c'est à dire _valeurs séparées par des virgules_, c'est un type de données très commun.
+- nom_la_catégorie.csv : le fichier qui contient les records d'une certaine catégorie. Pour la culture, csv signigie _coma separated values_ c'est à dire _valeurs séparées par des virgules_, c'est un type de données très commun.
 
 Voici la structure d'un fichier csv:
 
