@@ -31,6 +31,7 @@ const Header = (props: HeaderProps) => {
           <img
             src="/favicon.ico"
             alt="Club's logo"
+            className="favicon"
             style={
               window.innerWidth > window.innerHeight
                 ? { width: "5vw", height: "auto" }

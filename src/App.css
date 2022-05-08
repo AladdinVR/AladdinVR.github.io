@@ -1,3 +1,7 @@
-img {
-  width: 50vw;
+img:not(.favicon) {
+  width: 70vw;
+  max-width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
