@@ -30,12 +30,10 @@ const Records = (props: RecordsProps) => {
   const [category, setCategory] = useState("avenir");
   const [type, setType] = useState("individual");
   const [openTip, setOpenTip] = useState(false);
-
   const columns: GridColDef[] = [
     {
       field: "swim",
       headerName: t("swim"),
-      width: 100,
       filterable: type === "individual",
       type: "singleSelect",
       valueOptions: [
@@ -49,7 +47,6 @@ const Records = (props: RecordsProps) => {
     {
       field: "length",
       headerName: t("length"),
-      width: 100,
       type: "singleSelect",
       valueOptions: ["50m", "100m", "200m", "400m", "1500m"],
       filterable: type === "individual",
@@ -57,27 +54,23 @@ const Records = (props: RecordsProps) => {
     {
       field: "firstName",
       headerName: t("firstName"),
-      width: 150,
       filterable: false,
     },
     {
       field: "lastName",
       headerName: t("lastName"),
-      width: 150,
       filterable: false,
     },
     {
       field: "time",
       headerName: t("time"),
       type: "dateTime",
-      width: 150,
       disableColumnMenu: true,
       filterable: false,
     },
     {
       field: "place",
       headerName: t("place"),
-      width: 150,
       sortable: false,
       filterable: false,
     },
@@ -85,7 +78,6 @@ const Records = (props: RecordsProps) => {
       field: "date",
       headerName: t("date"),
       type: "date",
-      width: 150,
       filterable: false,
     },
   ];
@@ -297,7 +289,10 @@ const Records = (props: RecordsProps) => {
       <Container maxWidth="lg">
         <Header setPage={props.setPage} />
         {rows !== undefined && rows?.length !== 0 && (
-          <div style={{ height: "74vh", width: "100%", marginTop: "1vh" }}>
+          <div
+            id={"DataGridContainer"}
+            style={{ height: "74vh", width: "100%", marginTop: "1vh" }}
+          >
             <DataGrid
               rows={rows}
               columns={columns}
