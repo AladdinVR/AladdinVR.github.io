@@ -1,6 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
-import Header from "../Header";
 import Footer from "../Footer";
 import { useTranslation } from "react-i18next";
 import {
@@ -286,29 +285,26 @@ const Records = (props: RecordsProps) => {
   return (
     <>
       <CssBaseline />
-      <Container maxWidth="lg">
-        <Header setPage={props.setPage} />
-        {rows !== undefined && rows?.length !== 0 && (
-          <div
-            id={"DataGridContainer"}
-            style={{ height: "74vh", width: "100%", marginTop: "1vh" }}
-          >
-            <DataGrid
-              rows={rows}
-              columns={columns}
-              disableSelectionOnClick
-              components={{
-                Toolbar: CustomToolbar,
-              }}
-              hideFooter
-              pageSize={rows.length}
-              localeText={
-                gridLanguage[i18n.language as keyof typeof gridLanguage]
-              }
-            />
-          </div>
-        )}
-      </Container>
+      {rows !== undefined && rows?.length !== 0 && (
+        <div
+          id={"DataGridContainer"}
+          style={{ height: "74vh", width: "100%", marginTop: "1vh" }}
+        >
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            disableSelectionOnClick
+            components={{
+              Toolbar: CustomToolbar,
+            }}
+            hideFooter
+            pageSize={rows.length}
+            localeText={
+              gridLanguage[i18n.language as keyof typeof gridLanguage]
+            }
+          />
+        </div>
+      )}
       <Footer />
     </>
   );

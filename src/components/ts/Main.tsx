@@ -9,7 +9,6 @@ const Main = (props: MainProps) => {
   const { i18n } = useTranslation();
   return (
     <Grid item xs={12} md={8}>
-      <Divider />
       <MuiMarkdown
         children={props[i18n.language.slice(0, 2) as keyof typeof props]}
       />

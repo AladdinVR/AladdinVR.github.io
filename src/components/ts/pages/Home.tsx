@@ -1,7 +1,6 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import Header from "../Header";
 import Main from "../Main";
 import Footer from "../Footer";
 import { HomeProps } from "../../../utils/Props";
@@ -14,12 +13,10 @@ const Home = (props: HomeProps) => {
   return (
     <>
       <CssBaseline />
-      <Container maxWidth="lg">
-        <Header setPage={props.setPage} />
-        <Grid sx={{ mt: 3 }}>
-          <Main {...props} />
-        </Grid>
-      </Container>
+
+      <Grid sx={{ mt: 3 }}>
+        <Main {...props} />
+      </Grid>
       <Footer />
     </>
   );
