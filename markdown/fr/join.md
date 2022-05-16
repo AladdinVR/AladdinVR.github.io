@@ -18,8 +18,8 @@ Et voilà ! Avec le temps il sera possible d'acheter un peu plus de matériel co
 Concernant les horaires ils dépendent de la période de l'année et de votre niveau:
 
 - En juin :
-  - de 18h00 à 19h00 pour le groupe loisir
-  - de 18h30 à 20h00 pour le groupe compétition
+  - de 19h00 à 20h00 pour le groupe loisir
+  - de 19h30 à 21h00 pour le groupe compétition
 - En juillet (à partir du début des vacances scolaires) et en août :
   - de 18h30 à 19h30 pour le groupe loisir
   - de 19h à 20h30 pour le groupe compétition
