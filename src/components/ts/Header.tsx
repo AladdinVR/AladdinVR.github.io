@@ -14,7 +14,7 @@ const Header = (props: HeaderProps) => {
     { title: t("join"), dest: "join", weight: "14px" },
     { title: t("history"), dest: "history", weight: "14px" },
     { title: t("song"), dest: "song", weight: "14px" },
-    { title: t("record"), dest: "ranking", weight: "14px" },
+    { title: t("ranking"), dest: "ranking", weight: "14px" },
   ]);
   useEffect(() => {
     let tempSections = [...sections];
