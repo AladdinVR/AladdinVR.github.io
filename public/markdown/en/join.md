@@ -18,8 +18,8 @@ And that's it! With time it will be possible to buy a little more material like 
 Concerning the timetable, it depends on the time of the year and your level:
 
 - In June :
-  - from 18h00 to 19h00 for the leisure group
-  - from 6.30 pm to 8 pm for the competition group
+  - from 7 pm to 8 pm for the leisure group
+  - from 7.30 pm to 9 pm for the competition group
 - In July (since the beginning of holidays) and August :
   - from 6.30 pm to 7.30 pm for the leisure group
   - from 7pm to 8.30pm for the competition group
