@@ -6,4 +6,5 @@ img:not(.favicon) {
   margin-right: auto;
   margin-top: 1ch;
   margin-bottom: 1ch;
+  border-radius: 12px;
 }
