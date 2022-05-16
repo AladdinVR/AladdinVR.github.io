@@ -1,48 +1,53 @@
-# Song domain English Version
+# La boiteuse
 
-_April 10, 2020 by [Olivier]_
+Based on the rythm of *la boiteuse*
 
-![image info](/pictures/test.png)
+Quand les cérétans vont en compet<br/>
+Quand les cérétans vont en compet<br/>
+Ils n'y vont jamais sans leurs lunettes<br/>
+Car ce sont vraiment de bons athlètes<br/>
+Et ils s'en vont du coté de [ville de la compèt]<br/>
+En montrant leurs muscles<br/>
+Et jamais sans la rage<br/>
+Ah ! Vous les avez vu et reconnu !<br/>
+Les cérétans vont vous manger tout cru !<br/>
 
-This blog post shows a few different types of content that are supported and styled with
-Material styles. Basic typography, images, and code are all supported.
-You can extend these by modifying `Markdown.js`.
+Sur l'air du tralalalala<br/>
+Sur l'air du tralalalala<br/>
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Sur l'air du tralalalalalalalala<br/>
 
-Curabitur blandit tempus porttitor. **Nullam quis risus eget urna mollis** ornare vel eu leo.
-Nullam id dolor id nibh ultricies vehicula ut id elit.
+# Les oiseaux de Thibault
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-Aenean lacinia bibendum nulla sed consectetur.
+Based on the rythm of *Ça fait rire les oiseaux (de la compagnie Créole)*<br/>
 
-## Heading
+Les nageurs du cnc chaque année se mettent à chanter,<br/>
+chaque début de saison c'est le moment de nager<br/>
+Même si les début sont durs et se font dans la douleur<br/>
+Ensemble réunis c'est vraiment ça le bonheur!<br/>
 
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Ça fait chanter les nageurs ohohoh,<br/>
+chanter les nageurs<br/>
+Ça fait danser les nageuses ohohoh<br/>
+danser les nageuses<br/>
 
-### Sub-heading 1
+Les autres clubs ne nous font pas vraiment vraiment peur<br/>
+Car petits et grands nous sommes de grands nageurs<br/>
+Les filles se donneront encouragée par les garçons<br/>
+Oui le club et soudé nous sommes là pour gagner<br/>
+Et même dans les moments durs quand le coeur n'y est plus,<br/>
+Le cnc sera toujours là<br/>
+Ya toujours une mélodie pour les jours meilleurs,<br/>
+Aller tape dans tes mains,<br/>
+Ça porte bonheur,<br/>
+C'est magique un refrain qu'on reprend tous en coeur<br/>
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Les nageurs du cnc chaque année se mettent à chanter,<br/>
+En fin de saison il faut se donner pour gagner !<br/>
+Petits et grands seront présents, encouragés par les parents.<br/>
+Et nagent avec coeur sous l'oeil de leur entraineur !<br/>
 
-### Sub-heading 2
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-sit amet risus.
-
-- Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-- Donec id elit non mi porta gravida at eget metus.
-- Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-1. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-1. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+Ça fait chanter les nageurs ohohoh,<br/>
+chanter les nageurs<br/>
+Ça fait danser les nageuses ohohoh<br/>
+danser les nageuses<br/>
