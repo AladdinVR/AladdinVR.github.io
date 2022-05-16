@@ -105,3 +105,116 @@ Pour vous former sur ces différentes technologies voici des liens utiles:
 - [pour React](https://fr.reactjs.org/tutorial/tutorial.html)
 
 Voici la structure de notre dossier :
+
+.
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── public
+│   ├── 404.html
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   ├── markdown
+│   │   ├── en
+│   │   │   ├── history.md
+│   │   │   ├── home.md
+│   │   │   ├── join.md
+│   │   │   └── song.md
+│   │   └── fr
+│   │       ├── history.md
+│   │       ├── home.md
+│   │       ├── join.md
+│   │       └── song.md
+│   ├── pictures
+│   │   ├── history
+│   │   │   ├── photo2010.jpg
+│   │   │   ├── photo70.jpg
+│   │   │   ├── photo80.jpg
+│   │   │   ├── photo90.jpg
+│   │   │   ├── photoFeria.jpg
+│   │   │   └── photoSalines.jpg
+│   │   ├── home
+│   │   │   ├── photoJeu.jpg
+│   │   │   └── photoTeam2.jpg
+│   │   ├── join
+│   │   │   ├── photoCompet.jpg
+│   │   │   ├── photoMairie.jpg
+│   │   │   └── photoTeam.jpg
+│   │   └── test.png
+│   ├── records
+│   │   ├── individual
+│   │   │   ├── female
+│   │   │   │   ├── avenir.csv
+│   │   │   │   ├── benjamin.csv
+│   │   │   │   ├── cadet.csv
+│   │   │   │   ├── junior.csv
+│   │   │   │   ├── minime.csv
+│   │   │   │   └── poussin.csv
+│   │   │   └── male
+│   │   │       ├── avenir.csv
+│   │   │       ├── benjamin.csv
+│   │   │       ├── cadet.csv
+│   │   │       ├── junior.csv
+│   │   │       ├── minime.csv
+│   │   │       └── poussin.csv
+│   │   └── relay
+│   │       ├── female
+│   │       │   ├── avenirPoussin.csv
+│   │       │   ├── benjaminMinime.csv
+│   │       │   └── cadetJunior.csv
+│   │       ├── male
+│   │       │   ├── avenirPoussin.csv
+│   │       │   ├── benjaminMinime.csv
+│   │       │   └── cadetJunior.csv
+│   │       └── mixt
+│   │           └── 10x50.csv
+│   └── robots.txt
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.test.tsx
+│   ├── App.tsx
+│   ├── components
+│   │   └── ts
+│   │       ├── FeaturedPost.tsx
+│   │       ├── Footer.tsx
+│   │       ├── Header.tsx
+│   │       ├── LanguageSelector.tsx
+│   │       ├── MainFeaturedPost.tsx
+│   │       ├── Main.tsx
+│   │       ├── Markdown.tsx
+│   │       ├── pages
+│   │       │   ├── History.tsx
+│   │       │   ├── Home.tsx
+│   │       │   ├── Join.tsx
+│   │       │   ├── Records.tsx
+│   │       │   └── Song.tsx
+│   │       └── SelectButton.tsx
+│   ├── declaration.d.ts
+│   ├── i18n.ts
+│   ├── index.css
+│   ├── index.tsx
+│   ├── logo.svg
+│   ├── react-app-env.d.ts
+│   ├── react-i18next.d.ts
+│   ├── reportWebVitals.ts
+│   ├── setupTests.ts
+│   ├── translations
+│   │   ├── en.json
+│   │   └── fr.json
+│   └── utils
+│       ├── Props
+│       │   └── index.d.ts
+│       └── records
+│           └── manIndividual.json
+├── tsconfig.json
+├── TutoBrancheMain.png
+└── TutoEditText.png
+
+Je vais essayer de parcourir avec vous ces dossiers:
+Commençons par ce qui est simple à savoir les fichiers qui ne sont pas trop utiles pour nous:
+* Les différentes images à la base de ce dossier (.png) sont les images de ce README.
+* LICENSE, c'est un fichier qui dit que tout ce qui est dans ce dossier est opensource. C'est à dire que n'importe qui est libre de copier tout ou partie du code pour en faire ce qu'il veut. C'est une philosophie de partage qui vous servira si vous vous mettez aussi à coder !
+* Le fichier tsconfig.json est un fichier de configuration qui ne nous intéresse pas trop.
+* Les fichiers package.json et package-lock.json sont des fichiers qui permettent de connaître tous les différents modules nécessaires au bon fonctionnement du site.
