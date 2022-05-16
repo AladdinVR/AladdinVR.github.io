@@ -1,6 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
 import Main from "../Main";
 import Footer from "../Footer";
 import { HomeProps } from "../../../utils/Props";

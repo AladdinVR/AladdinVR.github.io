@@ -1,5 +1,4 @@
 import CssBaseline from "@mui/material/CssBaseline";
-import Container from "@mui/material/Container";
 import Main from "../Main";
 import Footer from "../Footer";
 import { HistoryProps } from "../../../utils/Props";

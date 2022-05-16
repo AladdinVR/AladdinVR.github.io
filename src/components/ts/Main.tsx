@@ -1,6 +1,5 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
 import MuiMarkdown from "mui-markdown";
 import { MainProps } from "../../utils/Props";
 import { useTranslation } from "react-i18next";
