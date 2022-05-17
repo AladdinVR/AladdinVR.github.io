@@ -1,8 +1,8 @@
-# Bienvenue sur le site du club de natation de Céret!
+# Bienvenue sur le site du club de natation de Céret !
 
 <img src="/pictures/home/photoTeam2.jpg" alt="team picture">
 
-Ce site a pour but de tenir un historique du club, des ses records, ainsi que des informations pratiques pour découvrir comment nous rejoindre.
+Ce site a pour but de tenir un historique du club, de ses records, ainsi que des informations pratiques pour découvrir comment nous rejoindre.
 
 Pour en savoir plus, vous pouvez vous badadez dans les différents onglets.
 
