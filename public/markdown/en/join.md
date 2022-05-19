@@ -17,14 +17,22 @@ And that's it! With time it will be possible to buy a little more material like 
 
 Concerning the timetable, it depends on the time of the year and your level:
 
-- In June :
+- In June (every Monday, Tuesday, Thursday, Friday):
   - from 7 pm to 8 pm for the leisure group
   - from 7.30 pm to 9 pm for the competition group
-- In July (since the beginning of holidays) and August :
+- In July (since the beginning of holidays) and August (at lesast every Monday, Tuesday, Thursday, Friday):
   - from 6.30 pm to 7.30 pm for the leisure group
   - from 7pm to 8.30pm for the competition group
 
 The two groups above allow the different swimmers to progress at their own pace, this does not prevent the children in the leisure group from competing with the others, quite the contrary!
+
+Registration fees are :
+
+* 120 euros for one child
+* 220 euros for two children
+* 300 euros for three children
+
+You can download the registration form (in french) <a href="registration/pdf" download> by clicking here !</a>
 
 <img src="/pictures/join/photoMairie.jpg" alt="members congrated by mayor">
 
