@@ -4,27 +4,22 @@ import Link from "@mui/material/Link";
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
 import { HeaderProps } from "../../utils/Props";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { CssBaseline } from "@mui/material";
 
 const Header = (props: HeaderProps) => {
   const title = "CNC";
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [sections, setSections] = useState([
-    { title: t("home"), dest: "home", weight: "Bold" },
-    { title: t("join"), dest: "join", weight: "14px" },
-    { title: t("history"), dest: "history", weight: "14px" },
-    { title: t("song"), dest: "song", weight: "14px" },
-    { title: t("ranking"), dest: "ranking", weight: "14px" },
+    { title: "home", dest: "home", weight: "Bold" },
+    { title: "join", dest: "join", weight: "14px" },
+    { title: "history", dest: "history", weight: "14px" },
+    { title: "song", dest: "song", weight: "14px" },
+    { title: "ranking", dest: "ranking", weight: "14px" },
   ]);
-  useEffect(() => {
-    let tempSections = [...sections];
-    tempSections.forEach((_element, index) => {
-      tempSections[index].title = t(tempSections[index].dest as keyof typeof t);
-    });
-    setSections(tempSections);
-  }, [i18n.language, sections, t]);
   return (
     <div>
+      <CssBaseline />
       <div id="container">
         <Toolbar
           component="nav"
@@ -55,7 +50,7 @@ const Header = (props: HeaderProps) => {
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: "space-between", overflowX: "auto" }}
+        sx={{ justifyContent: "space-around", overflowX: "auto" }}
       >
         {sections.map((section, index) => (
           <Link
@@ -75,7 +70,7 @@ const Header = (props: HeaderProps) => {
             sx={{ p: 1, flexShrink: 0 }}
             style={{ cursor: "pointer " }}
           >
-            {section.title}
+            {t(section.title as keyof typeof t)}
           </Link>
         ))}
       </Toolbar>

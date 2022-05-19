@@ -10,16 +10,13 @@ const themeOptions: ThemeOptions = {
   palette: {
     primary: {
       main: "#303030",
-      light: "rgba(158,158,158,0.63)",
-      dark: "#181818",
-      contrastText: "#bdbdbd",
     },
     secondary: {
-      main: "#9e9e9e",
+      main: "#2a3eb1",
     },
     background: {
-      default: "rgba(225,225,225,0.5)",
-      paper: "#d1d1d1",
+      default: "#f8f8f8",
+      paper: "#33eaff",
     },
     text: {
       primary: "#212121",
@@ -30,17 +27,14 @@ const themeOptions: ThemeOptions = {
   typography: {
     h1: {
       fontWeight: 300,
-      fontFamily: "serif",
       fontSize: "3rem",
     },
     h2: {
       fontWeight: 300,
-      fontFamily: "serif",
       fontSize: "2rem",
     },
     h3: {
       fontWeight: 300,
-      fontFamily: "serif",
       fontSize: "2rem",
     },
     body1: {
@@ -48,6 +42,7 @@ const themeOptions: ThemeOptions = {
     },
     allVariants: {
       textAlign: "left",
+      fontFamily: "Lato",
     },
   },
   shape: {

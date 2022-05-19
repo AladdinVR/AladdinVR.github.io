@@ -4,6 +4,7 @@ import Main from "../Main";
 import Footer from "../Footer";
 import { HomeProps } from "../../../utils/Props";
 import { useEffect } from "react";
+import { Container } from "@mui/material";
 
 const Home = (props: HomeProps) => {
   useEffect(() => {
@@ -12,10 +13,11 @@ const Home = (props: HomeProps) => {
   return (
     <>
       <CssBaseline />
-
-      <Grid sx={{ mt: 3 }}>
-        <Main {...props} />
-      </Grid>
+      <Container maxWidth="lg">
+        <Grid sx={{ mt: 3 }}>
+          <Main {...props} />
+        </Grid>
+      </Container>
       <Footer />
     </>
   );

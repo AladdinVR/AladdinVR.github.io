@@ -6,7 +6,6 @@ import Records from "./components/ts/pages/Records";
 import Song from "./components/ts/pages/Song";
 import Join from "./components/ts/pages/Join";
 import Header from "./components/ts/Header";
-import { Container } from "@mui/material";
 
 interface MarkdownDocument {
   history: {
@@ -84,10 +83,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <Container maxWidth="lg">
-        <Header setPage={setPage} />
-        {pageRenderer(page)}
-      </Container>
+      <Header setPage={setPage} />
+      {pageRenderer(page)}
     </div>
   );
 };

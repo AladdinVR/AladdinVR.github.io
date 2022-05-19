@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { RecordsProps, RecordsRows } from "../../../utils/Props";
 import {
   ClickAwayListener,
+  Container,
   MenuItem,
   Select,
   Toolbar,
@@ -283,27 +284,29 @@ const Records = (props: RecordsProps) => {
   }, []);
   return (
     <>
-      <CssBaseline />
-      {rows !== undefined && rows?.length !== 0 && (
-        <div
-          id={"DataGridContainer"}
-          style={{ height: "74vh", width: "100%", marginTop: "1vh" }}
-        >
-          <DataGrid
-            rows={rows}
-            columns={columns}
-            disableSelectionOnClick
-            components={{
-              Toolbar: CustomToolbar,
-            }}
-            hideFooter
-            pageSize={rows.length}
-            localeText={
-              gridLanguage[i18n.language as keyof typeof gridLanguage]
-            }
-          />
-        </div>
-      )}
+      <Container maxWidth="lg">
+        <CssBaseline />
+        {rows !== undefined && rows?.length !== 0 && (
+          <div
+            id={"DataGridContainer"}
+            style={{ height: "74vh", width: "100%", marginTop: "1vh" }}
+          >
+            <DataGrid
+              rows={rows}
+              columns={columns}
+              disableSelectionOnClick
+              components={{
+                Toolbar: CustomToolbar,
+              }}
+              hideFooter
+              pageSize={rows.length}
+              localeText={
+                gridLanguage[i18n.language as keyof typeof gridLanguage]
+              }
+            />
+          </div>
+        )}
+      </Container>
       <Footer />
     </>
   );
