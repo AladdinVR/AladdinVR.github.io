@@ -98,20 +98,29 @@ Pour commencer voici une liste des technologies que nous utilisons dans ce proje
 - Le `typescript` est une surcouche de javascript qui _type_ le javascript. C'est à dire qu'elle ajoute des informations quand on crée des variables (on précise que c'est une chaîne de caractères par exemple). C'est extrèmement pratique pour se prémunir d'erreurs et pour bien comprendre ce qu'on manipule. Le site est actuellement basé sur typescript.
 - Le `React` est une surcouche de typescript (ou javascript) qui permet de gérer plus intuitivement les intéractions entre le html et javascript. C'est ce qu'on appelle un `framework`.
 - La librairie de React `MaterialUI` qui est un framework css (c'est donc une librairie qui écrit du css pour nous). Et qui nous permet d'avoir un joli rendu.
+- `git` est une technologie de gestion de versions permettant de travailler à plusieurs sur un projet sans se gèner. Cela permet aussi de "protéger" la version de production de notre site pour pouvoir faire nos expériences sans rien casser.
 
 Pour vous former sur ces différentes technologies voici des liens utiles:
 
 - [pour typecript](https://www.codecademy.com/learn/learn-typescript)
 - [pour React](https://fr.reactjs.org/tutorial/tutorial.html)
+- [pour git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
 Voici la structure de notre dossier :
 
 .
+├── .env
+├── .env.local
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── .gitignore
 ├── LICENSE
 ├── package.json
 ├── package-lock.json
 ├── public
 │   ├── 404.html
+│   ├── CNAME
 │   ├── favicon.ico
 │   ├── index.html
 │   ├── manifest.json
@@ -218,3 +227,5 @@ Commençons par ce qui est simple à savoir les fichiers qui ne sont pas trop ut
 * LICENSE, c'est un fichier qui dit que tout ce qui est dans ce dossier est opensource. C'est à dire que n'importe qui est libre de copier tout ou partie du code pour en faire ce qu'il veut. C'est une philosophie de partage qui vous servira si vous vous mettez aussi à coder !
 * Le fichier tsconfig.json est un fichier de configuration qui ne nous intéresse pas trop.
 * Les fichiers package.json et package-lock.json sont des fichiers qui permettent de connaître tous les différents modules nécessaires au bon fonctionnement du site.
+* Le fichier .gitignore est un fichier de configuration de git qui permet de ne pas prendre en compte certains fichiers lorsqu'on push sa branche. C'est très utile pour protéger des mots de passes ou pour éviter de surcharger notre github (par exemple, les fichiers dans le dossier node_modules ne sont pas présents initialement)
+
