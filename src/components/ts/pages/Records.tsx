@@ -306,6 +306,16 @@ const Records = (props: RecordsProps) => {
             />
           </div>
         )}
+        <Typography>
+          Pour mettre à jour les records du club vous pouvez aller{" "}
+          <a
+            href="https://github.com/AladdinVR/aladdinvr.github.io/blob/main/README.md"
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            sur ce site
+          </a>
+        </Typography>
       </Container>
       <Footer />
     </>
