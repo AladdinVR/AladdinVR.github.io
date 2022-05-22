@@ -4,7 +4,7 @@
 
 Ce site a pour but de tenir un historique du club, de ses records, ainsi que des informations pratiques pour découvrir comment nous rejoindre.
 
-Pour en savoir plus, vous pouvez vous badadez dans les différents onglets.
+Pour en savoir plus, vous pouvez vous balader dans les différents onglets.
 
 <img src="/pictures/home/photoJeu.jpg" alt="team playing">
 
