@@ -8,6 +8,6 @@ For further informations, you can hang around the different tabs
 
 <img src="/pictures/home/photoJeu.jpg" alt="team playing">
 
-If you'd like to contribute to this website's development, feel free to contact me at <a href="tel:+33783352325">this phone number</a> or by mail at <a href="mailto:adrienberger66@gmail.com">this email address</a>.
+If you'd like to contribute to this website's development, feel free to contact me by mail at <a href="mailto:adrienberger66@gmail.com">this email address</a>.
 
 Have a nice visit and see you soon !
