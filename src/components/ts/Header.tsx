@@ -4,19 +4,38 @@ import Link from "@mui/material/Link";
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
 import { HeaderProps } from "../../utils/Props";
-import { useState } from "react";
 import { CssBaseline } from "@mui/material";
 
 const Header = (props: HeaderProps) => {
   const title = "CNC";
   const { t } = useTranslation();
-  const [sections, setSections] = useState([
-    { title: "home", dest: "home", weight: "Bold" },
-    { title: "join", dest: "join", weight: "14px" },
-    { title: "history", dest: "history", weight: "14px" },
-    { title: "song", dest: "song", weight: "14px" },
-    { title: "ranking", dest: "ranking", weight: "14px" },
-  ]);
+  let sections = [
+    {
+      title: t("home"),
+      dest: "home",
+      weight: props.page === "home" ? "Bold" : "14px",
+    },
+    {
+      title: t("join"),
+      dest: "join",
+      weight: props.page === "join" ? "Bold" : "14px",
+    },
+    {
+      title: t("history"),
+      dest: "history",
+      weight: props.page === "history" ? "Bold" : "14px",
+    },
+    {
+      title: t("song"),
+      dest: "song",
+      weight: props.page === "song" ? "Bold" : "14px",
+    },
+    {
+      title: t("ranking"),
+      dest: "ranking",
+      weight: props.page === "ranking" ? "Bold" : "14px",
+    },
+  ];
   return (
     <div>
       <CssBaseline />
@@ -64,7 +83,7 @@ const Header = (props: HeaderProps) => {
                 tempSections[index].weight = "14px";
               });
               tempSections[index].weight = "Bold";
-              setSections(tempSections);
+              sections = tempSections;
               props.setPage(section.dest);
             }}
             sx={{ p: 1, flexShrink: 0 }}

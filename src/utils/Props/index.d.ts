@@ -14,6 +14,7 @@ export type FooterProps = {
 };
 
 export type HeaderProps = {
+  page: string;
   setPage: React.Dispatch<React.SetStateAction<string>>;
 };
 
