@@ -26,7 +26,7 @@ const SelectButton: FunctionComponent<SelectButtonProps> = (
               key={menuItem.id}
               value={menuItem.text ? menuItem.text : ""}
             >
-              {menuItem.text}
+              {menuItem.text.slice(0, 1).toUpperCase() + menuItem.text.slice(1)}
             </MenuItem>
           ))}
         </Select>
