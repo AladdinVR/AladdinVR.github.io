@@ -2,7 +2,7 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailIcon from '@mui/icons-material/Email';
+import EmailIcon from "@mui/icons-material/Email";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import { useTranslation } from "react-i18next";
@@ -11,7 +11,11 @@ import { Paper } from "@mui/material";
 const Footer = () => {
   const { t } = useTranslation();
   const social = [
-    { name: "Instagram", icon: InstagramIcon, href: "https://instagram.com/cnceret?igshid=YmMyMTA2M2Y=" },
+    {
+      name: "Instagram",
+      icon: InstagramIcon,
+      href: "https://instagram.com/cnceret?igshid=YmMyMTA2M2Y=",
+    },
     {
       name: "Facebook",
       icon: FacebookIcon,
