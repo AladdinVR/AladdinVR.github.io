@@ -17,14 +17,22 @@ Et voilà ! Avec le temps il sera possible d'acheter un peu plus de matériel co
 
 Concernant les horaires ils dépendent de la période de l'année et de votre niveau:
 
-- En juin :
-  - de 19h00 à 20h00 pour le groupe loisir
+- En juin (les lundis, mardis, jeudis et vendredis):
+  - de 19h15 à 20h15 pour le groupe loisir
   - de 19h30 à 21h00 pour le groupe compétition
-- En juillet (à partir du début des vacances scolaires) et en août :
+- En juillet (à partir du début des vacances scolaires) et en août (au moins les lundis,mardis, jeudis et vendredis):
   - de 18h30 à 19h30 pour le groupe loisir
   - de 19h à 20h30 pour le groupe compétition
 
 Les deux groupes ci-dessus permettent aux différents nageurs de progresser à leur rythme, cela n'empêche pas les enfants du groupe loisir de faire des compétitions avec les autres, bien au contraire !
+
+Les tarifs d'inscription sont de :
+
+- 120 euros pour un enfant
+- 220 euros pour deux enfants
+- 300 euros pour trois enfants
+
+Vous pouvez télécharger <a href="pdf/ficheInscription.pdf" download> la fiche d'inscription </a>, <a href="pdf/questionnaireSanté.pdf" download> le questionnaire de santé </a>, et <a href="pdf/attestationQS.pdf" download> l'attestation correspondante !</a>
 
 <img src="/pictures/join/photoMairie.jpg" alt="members congrated by mayor">
 
