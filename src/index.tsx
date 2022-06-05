@@ -3,8 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ThemeProvider } from "@emotion/react";
-import { createTheme, CssBaseline, ThemeOptions } from "@mui/material";
+import {
+  createTheme,
+  CssBaseline,
+  ThemeOptions,
+  ThemeProvider,
+} from "@mui/material";
 
 const themeOptions: ThemeOptions = {
   palette: {

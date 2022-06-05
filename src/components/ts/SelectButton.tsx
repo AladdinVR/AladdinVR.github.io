@@ -1,5 +1,11 @@
 import React, { FunctionComponent } from "react";
-import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
+import {
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  CssBaseline,
+} from "@mui/material";
 import { SelectButtonProps } from "../../utils/Props";
 
 const SelectButton: FunctionComponent<SelectButtonProps> = (
@@ -7,10 +13,10 @@ const SelectButton: FunctionComponent<SelectButtonProps> = (
 ) => {
   return (
     <div {...props.div} className="SelectButton" style={{ overflow: "auto" }}>
+      <CssBaseline />
       <FormControl
         style={{ background: "default" }}
         variant="standard"
-        color="secondary"
         sx={{ m: 1, minWidth: 140 }}
       >
         <InputLabel id="input-label">

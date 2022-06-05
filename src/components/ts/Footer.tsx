@@ -2,16 +2,53 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailIcon from '@mui/icons-material/Email';
+import EmailIcon from "@mui/icons-material/Email";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import { useTranslation } from "react-i18next";
-import { Paper } from "@mui/material";
+import {
+  createTheme,
+  CssBaseline,
+  Paper,
+  Theme,
+  ThemeOptions,
+  ThemeProvider,
+} from "@mui/material";
 
+const innerThemeOptions: ThemeOptions = {
+  components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#082544",
+          borderRadius: "0px",
+        },
+      },
+    },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: "#fadd68",
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#fadd68",
+        },
+      },
+    },
+  },
+};
 const Footer = () => {
   const { t } = useTranslation();
   const social = [
-    { name: "Instagram", icon: InstagramIcon, href: "https://instagram.com/cnceret?igshid=YmMyMTA2M2Y=" },
+    {
+      name: "Instagram",
+      icon: InstagramIcon,
+      href: "https://instagram.com/cnceret?igshid=YmMyMTA2M2Y=",
+    },
     {
       name: "Facebook",
       icon: FacebookIcon,
@@ -21,29 +58,41 @@ const Footer = () => {
   ];
 
   return (
-    <Paper style={{ height: "10vh" }}>
-      <Typography variant="h6" align="center" gutterBottom>
-        {t("networks")}
-      </Typography>
-      <Stack
-        direction="row"
-        spacing={1}
-        alignItems="center"
-        justifyContent="center"
+    <>
+      <CssBaseline />
+      <ThemeProvider
+        theme={(theme: Theme) =>
+          createTheme({
+            ...theme,
+            ...innerThemeOptions,
+          })
+        }
       >
-        {social.map((network) => (
-          <Link
-            display="block"
-            variant="body1"
-            href={network.href}
-            key={network.name}
-            sx={{ mb: 0.5 }}
+        <Paper style={{ height: "10vh" }}>
+          <Typography variant="h6" align="center" gutterBottom>
+            {t("networks")}
+          </Typography>
+          <Stack
+            direction="row"
+            spacing={1}
+            alignItems="center"
+            justifyContent="center"
           >
-            <network.icon />
-          </Link>
-        ))}
-      </Stack>
-    </Paper>
+            {social.map((network) => (
+              <Link
+                display="block"
+                variant="body1"
+                href={network.href}
+                key={network.name}
+                sx={{ mb: 0.5 }}
+              >
+                <network.icon />
+              </Link>
+            ))}
+          </Stack>
+        </Paper>
+      </ThemeProvider>
+    </>
   );
 };
 
