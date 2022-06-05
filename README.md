@@ -186,13 +186,10 @@ Voici la structure de notre dossier :
 │   ├── App.tsx
 │   ├── components
 │   │   └── ts
-│   │       ├── FeaturedPost.tsx
 │   │       ├── Footer.tsx
 │   │       ├── Header.tsx
 │   │       ├── LanguageSelector.tsx
-│   │       ├── MainFeaturedPost.tsx
 │   │       ├── Main.tsx
-│   │       ├── Markdown.tsx
 │   │       ├── pages
 │   │       │   ├── History.tsx
 │   │       │   ├── Home.tsx

@@ -83,7 +83,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header setPage={setPage} />
+      <Header page={page} setPage={setPage} />
       {pageRenderer(page)}
     </div>
   );
