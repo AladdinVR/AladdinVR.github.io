@@ -134,7 +134,7 @@ const Records = (props: RecordsProps) => {
           <MenuItem
             value={"male"}
             onClick={() => {
-              if (type === "relay" && category === "10x50")
+              if (type === "relay" && category === "mixt")
                 setCategory("avenirPoussin");
             }}
           >
@@ -143,14 +143,14 @@ const Records = (props: RecordsProps) => {
           <MenuItem
             value={"female"}
             onClick={() => {
-              if (type === "relay" && category === "10x50")
+              if (type === "relay" && category === "mixt")
                 setCategory("avenirPoussin");
             }}
           >
             {t("female")}
           </MenuItem>
           {type === "relay" && (
-            <MenuItem value={"mixt"} onClick={() => setCategory("10x50")}>
+            <MenuItem value={"mixt"} onClick={() => setCategory("mixt")}>
               {t("mixt")}
             </MenuItem>
           )}
@@ -185,7 +185,7 @@ const Records = (props: RecordsProps) => {
               setCategory(e.target.value);
             }}
           >
-            <MenuItem value={"10x50"}>{t("allCategory")}</MenuItem>
+            <MenuItem value={"mixt"}>{t("allCategory")}</MenuItem>
           </Select>
         ) : (
           <Select
