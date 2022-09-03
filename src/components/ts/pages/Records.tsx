@@ -240,7 +240,7 @@ const Records = (props: RecordsProps) => {
                   })}
                 </Typography>
                 <Typography>
-                  {t("catJuniors", { year: `${year - 9}` })}
+                  {t("catJuniors", { year: `${year - 18}` })}
                 </Typography>
               </>
             }
