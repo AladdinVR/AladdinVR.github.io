@@ -11,7 +11,7 @@ const Home = (props: HomeProps) => {
     localStorage.setItem("page", "home");
   }, []);
   return (
-    <>
+    <div className="Core">
       <CssBaseline />
       <Container maxWidth="lg">
         <Grid sx={{ mt: 3 }}>
@@ -19,7 +19,7 @@ const Home = (props: HomeProps) => {
         </Grid>
       </Container>
       <Footer />
-    </>
+    </div>
   );
 };
 

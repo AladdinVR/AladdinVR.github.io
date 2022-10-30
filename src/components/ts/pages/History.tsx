@@ -10,14 +10,14 @@ const History = (props: HistoryProps) => {
     localStorage.setItem("page", "history");
   }, []);
   return (
-    <>
+    <div className="Core">
       <CssBaseline />
       <Container maxWidth="lg">
         {" "}
         <Main {...props} />
       </Container>
       <Footer />
-    </>
+    </div>
   );
 };
 

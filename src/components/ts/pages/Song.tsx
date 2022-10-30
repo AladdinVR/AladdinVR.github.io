@@ -10,13 +10,13 @@ const Song = (props: SongProps) => {
     localStorage.setItem("page", "song");
   }, []);
   return (
-    <>
+    <div className="Core">
       <CssBaseline />
       <Container maxWidth="lg">
         <Main {...props} />
       </Container>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -9,13 +9,13 @@ const Join = (props: JoinProps) => {
     localStorage.setItem("page", "join");
   }, []);
   return (
-    <>
+    <div className="Core">
       <CssBaseline />
       <Container maxWidth="lg">
         <Main {...props} />
       </Container>
       <Footer />
-    </>
+    </div>
   );
 };
 

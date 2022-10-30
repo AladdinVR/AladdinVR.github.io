@@ -283,7 +283,7 @@ const Records = (props: RecordsProps) => {
     localStorage.setItem("page", "ranking");
   }, []);
   return (
-    <>
+    <div className="Core">
       <Container maxWidth="lg">
         <CssBaseline />
         {rows !== undefined && rows?.length !== 0 && (
@@ -318,7 +318,7 @@ const Records = (props: RecordsProps) => {
         </Typography>
       </Container>
       <Footer />
-    </>
+    </div>
   );
 };
 
