@@ -68,7 +68,7 @@ const Footer = () => {
           })
         }
       >
-        <Paper style={{ height: "10vh" }}>
+        <Paper style={{ minHeight: "10vh" }}>
           <Typography variant="h6" align="center" gutterBottom>
             {t("networks")}
           </Typography>
