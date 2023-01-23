@@ -69,7 +69,9 @@ const Header = (props: HeaderProps) => {
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: "space-around", overflowX: "auto" }}
+        sx={ window.innerWidth < 600 ? 
+          {justifyContent : "space-between", overflowX: "auto"}
+        : { justifyContent: "space-around", overflowX: "auto" }}
       >
         {sections.map((section, index) => (
           <Link
