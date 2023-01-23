@@ -45,6 +45,12 @@ export type MarkdownProps = {
   fileName: string;
 };
 
+export type TrainingProps = {
+  en: string;
+  fr: string;
+  setPage: React.Dispatch<React.SetStateAction<string>>;
+};
+
 export type RecordsProps = {
   setPage: React.Dispatch<React.SetStateAction<string>>;
 };

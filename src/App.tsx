@@ -6,6 +6,7 @@ import Records from "./components/ts/pages/Records";
 import Song from "./components/ts/pages/Song";
 import Join from "./components/ts/pages/Join";
 import Header from "./components/ts/Header";
+import Training from "./components/ts/pages/Training";
 
 interface MarkdownDocument {
   history: {
@@ -24,6 +25,10 @@ interface MarkdownDocument {
     en: string;
     fr: string;
   };
+  training: {
+    en: string;
+    fr: string;
+  }
 }
 
 const App = () => {
@@ -32,6 +37,7 @@ const App = () => {
     home: { en: "", fr: "" },
     join: { en: "", fr: "" },
     song: { en: "", fr: "" },
+    training: { en : "", fr : ""}
   });
   const currentPage = localStorage.getItem("page");
   const [page, setPage] = useState(currentPage !== null ? currentPage : "home");
@@ -45,12 +51,14 @@ const App = () => {
         return <Song {...markdowns.song} setPage={setPage} />;
       case "ranking":
         return <Records setPage={setPage} />;
+      case "training":
+        return <Training {...markdowns.training} setPage={setPage}/>
       default:
         return <Home {...markdowns.home} setPage={setPage} />;
     }
   };
   useEffect(() => {
-    const keys = ["history", "home", "join", "song"];
+    const keys = ["history", "home", "join", "song", "training"];
     keys.forEach((document) => {
       fetch(`/markdown/en/${document}.md`)
         .then((res: { text: () => any }) => res.text())
