@@ -20,18 +20,11 @@ const innerThemeOptions: ThemeOptions = {
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundColor: "#082544",
           borderRadius: "0px",
         },
       },
     },
-    MuiSvgIcon: {
-      styleOverrides: {
-        root: {
-          color: "#fadd68",
-        },
-      },
-    },
+
     MuiTypography: {
       styleOverrides: {
         root: {
@@ -62,10 +55,7 @@ const Footer = () => {
       <CssBaseline />
       <ThemeProvider
         theme={(theme: Theme) =>
-          createTheme({
-            ...theme,
-            ...innerThemeOptions,
-          })
+          createTheme(theme,innerThemeOptions)
         }
       >
         <Paper style={{ minHeight: "10vh" }}>

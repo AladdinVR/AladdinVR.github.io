@@ -20,7 +20,7 @@ const themeOptions: ThemeOptions = {
     },
     background: {
       default: "#f8f8f8",
-      paper: "#33eaff",
+      paper: "#264c83",
     },
     text: {
       primary: "#212121",
@@ -39,7 +39,7 @@ const themeOptions: ThemeOptions = {
     },
     h3: {
       fontWeight: 300,
-      fontSize: "2rem",
+      fontSize: "1.5rem",
     },
     body1: {
       fontSize: "1rem",
@@ -60,7 +60,48 @@ const themeOptions: ThemeOptions = {
         },
       },
     },
-  },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: "#fadd68",
+        },
+      },
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          color: "#fadd68",
+        },
+      },
+    },
+    MuiButtonBase:{
+      styleOverrides:{
+        root:{
+          color:"#fadd68"
+        }
+      }
+    },
+  MuiTableCell: {
+      styleOverrides: {
+        root: {
+          color: "#fadd68",
+          verticalAlign: "baseline",
+          border : "1px solid",
+          borderColor: "#fadd68",
+          width: "20%",
+          minWidth: "200px"
+        },
+      },
+    },
+    MuiTable:{
+      styleOverrides:{
+        root:{
+          borderCollapse: "collapse",
+          borderStyle: "hidden",
+        }
+      }
+    }
+  }
 };
 const theme = createTheme(themeOptions);
 ReactDOM.render(

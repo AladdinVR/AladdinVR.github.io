@@ -14,13 +14,66 @@ import { RecordsProps, RecordsRows } from "../../../utils/Props";
 import {
   ClickAwayListener,
   Container,
+  createTheme,
   MenuItem,
   Select,
+  Theme,
+  ThemeOptions,
+  ThemeProvider,
   Toolbar,
   Tooltip,
   Typography,
 } from "@mui/material";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+
+const innerThemeOptions: ThemeOptions = {
+  components:{
+    MuiInputLabel:{
+      styleOverrides:{
+        root:{
+          color:"#fadd68",
+          "&.Mui-focused":{
+            color:"#fadd68"
+        }
+        }
+      }
+    },
+    MuiInput:{
+      styleOverrides:{
+        root:{
+          color:"#fadd68",
+          "&:before": {
+            borderColor:"#fadd68",
+          },
+          "&:after":{
+            borderColor: "#fadd68"
+          }
+        },
+      }
+    },
+    MuiSelect:{
+      styleOverrides:{
+        icon:{
+          color:"#fadd68"
+        }
+      }
+    },
+    MuiNativeSelect:{
+      styleOverrides:{
+        icon:{
+          color:"#fadd68"
+        },
+      }
+    },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: "#fadd68",
+        },
+      },
+    },
+  },
+}
 
 const Records = (props: RecordsProps) => {
   const { t, i18n } = useTranslation();
@@ -92,8 +145,8 @@ const Records = (props: RecordsProps) => {
         variant="dense"
         sx={{ overflowX: "auto", justifyContent: "space-between" }}
       >
-        <GridToolbarFilterButton sx={{ minWidth: "auto" }} />
-        <GridToolbarDensitySelector sx={{ minWidth: "auto" }} />
+        <GridToolbarFilterButton sx={{ minWidth: "auto", color: "#fadd68" }} onResize={undefined} onResizeCapture={undefined} />
+        <GridToolbarDensitySelector sx={{ minWidth: "auto" , color: "#fadd68"}} onResize={undefined} onResizeCapture={undefined} />
         <Select
           labelId="typeSelector"
           id="typeSelector"
@@ -284,7 +337,13 @@ const Records = (props: RecordsProps) => {
   }, []);
   return (
     <div className="Core">
+      <ThemeProvider
+        theme={(theme: Theme) => 
+          createTheme(theme,innerThemeOptions)
+        }
+      >
       <Container maxWidth="lg">
+
         <CssBaseline />
         {rows !== undefined && rows?.length !== 0 && (
           <div
@@ -303,6 +362,7 @@ const Records = (props: RecordsProps) => {
               localeText={
                 gridLanguage[i18n.language as keyof typeof gridLanguage]
               }
+              style={{backgroundColor:"#264c83",color:"#fadd68"}}
             />
           </div>
         )}
@@ -316,8 +376,10 @@ const Records = (props: RecordsProps) => {
             sur ce site
           </a>
         </Typography>
+
       </Container>
       <Footer />
+      </ThemeProvider>
     </div>
   );
 };
