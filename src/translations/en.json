@@ -31,6 +31,7 @@
     "male": "Man",
     "female": "Woman",
     "mixt": "Mixt",
-    "allCategory": "All Categories"
+    "allCategory": "All Categories",
+    "training": "Training"
   }
 }

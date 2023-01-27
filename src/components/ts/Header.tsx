@@ -31,6 +31,11 @@ const Header = (props: HeaderProps) => {
       weight: props.page === "song" ? "Bold" : "14px",
     },
     {
+      title: t("training"),
+      dest: "training",
+      weight: props.page === "training" ? "Bold" : "14px",
+    },
+    {
       title: t("ranking"),
       dest: "ranking",
       weight: props.page === "ranking" ? "Bold" : "14px",
