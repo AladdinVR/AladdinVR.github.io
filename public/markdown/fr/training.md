@@ -1,7 +1,9 @@
 # Précisions sur les exercices :
-Si vous ne pouvez pas faire de pompes "classiques" il vaut mieux que vous surréleviez vos mains plutôt que de faire des pompes sur les genoux. Cela vous permettre de conserver une bonne position et de travailler le gainage en même temps. Vous pouvez vous référer à <a href="https://www.youtube.com/watch?v=Gvm5Q29UHbk">cette vidéo</a> pour visualiser le mouvement. 
+* Si vous ne pouvez pas faire de pompes "classiques" il vaut mieux que vous surréleviez vos mains plutôt que de faire des pompes sur les genoux. Cela vous permettre de conserver une bonne position et de travailler le gainage en même temps. Vous pouvez vous référer à <a href="https://www.youtube.com/watch?v=Gvm5Q29UHbk">cette vidéo</a> pour visualiser le mouvement. 
 
-Si vous avez un doute sur votre position **n'hésitez pas à vous filmer pour vérifier que vous faites le bon mouvement !**
+* Si vous avez un doute sur votre position **n'hésitez pas à vous filmer pour vérifier que vous faites le bon mouvement !**
+
+* Si vous cherchez une appli pour avoir des bips à intervalles réguliers vous pouvez télechargere <a href="https://play.google.com/store/apps/details?id=cc.dreamspark.intervaltimer&hl=fr&gl=US">cette appli</a> sur android : 
 
 # Premier mois :
 Un premnier mois pour reprendre un peu de masase musculaire !
@@ -55,7 +57,7 @@ On va se remettre au cardio tout en continuant la muscu.
 ### Menu de la semaine :
 | Jour | Lundi | Mercredi | Vendredi | Dimanche | 
 |:---|:---|:---|:---|:---|
-| Groupe musculaire  | abdos | bas | haut | cardio + abdos |
+| Groupe musculaire  | abdos | bas | haut | cardio |
 | Programme  | Faire 5 fois le circuit avec 1 min de récup entre chaque : <ul><li> 30 sec de gainage </li><li> 30 sec de russian twist</li><li> 30 sec de levé de jambes</li><li> 30 sec de bycicle</li></ul> | Faire le circuit deux fois avec 10 mins de recup entre : <ul><li> 100 squats le plus vite possible - 1 min de recup </li><li> 100 montées sur la pointe des pieds </li></ul> | Faire le circuit 2 fois avec 5 mins de recup entre les deux : <ul><li> 20 (ou 10 en fonctions du niveau) pompes </li><li> 1 min de récup </li><li> recommencer 5 fois </li></ul> | Faire le circuit 8 fois : <ul><li> 30 sec burpees </li><li> 30 sec squats sautés </li><li> 30 secondes montées de genoux </li><li> 30 secondes de jumping jacks </li></ul> | 
 
 ### Précisions du chef : 
@@ -77,3 +79,25 @@ On va se remettre au cardio tout en continuant la muscu.
 * Voici un exemple de planche croisée : il faut tendre une jambe et le bras opposé
 <img src="/pictures/training/cross_plank.jpg" alt="Cross Plank" style="max-width:500px"/>
 
+## Semaine 3 :
+### Menu de la semaine :
+| Jour | Lundi | Mercredi | Vendredi | Dimanche | 
+|:---|:---|:---|:---|:---|
+| Groupe musculaire  | abdos | bas | haut | cardio |
+| Programme  | Faire 3 fois le circuit, 30 secondes de travail par exercice, pas de récup entre les exos. Maximum une minute de recup entre les circuits : <ul><li> battements sur le dos </li><li> mountain climbers </li><li> planche croisée </li><li> russian twists </li><li> gainage côté droit </li><li> gainage à gauche </li></ul>  | Faire une fois <ul><li> Max de squats en 10 minutes (essayer de dépasser les 200 pour les grands) 5 mins de recup </li><li> 50 fentes jambe droite </li><li> 50 fentes jambe gauche </li></ul> | Faire le circuit 10 fois avec 1 mins de recup entre chaque : <ul><li> 10 mountain climbers avec pompes </li><li> 20 planches croisées </li><li> 10 dips </li><li> 5 pompes sautées (si possible) </li></ul> | Trouver un endroit avec une vingtaine de marches, faire le maximum de tours en 5 mins, 3 fois avec 5 mins de pause entre : <ul><li> Monter les escaliers </li><li> 10 squats jumps </li><li> descendre les escaliers </li><li> 10 burpees </li></ul> | 
+
+### Précisions du chef : 
+* pour les battements sur dos, lever le torse et faire des battements comme en crawl
+* 5 mins c'est pas long, le but c'est de vraiment se donner à fond
+* Si vous avez pas de marches, faites des montées de genoux
+
+## Semaine 4 :
+### Menu de la semaine :
+| Jour | Lundi | Mercredi | Vendredi | Dimanche | 
+|:---|:---|:---|:---|:---|
+| Groupe musculaire  | abdos | bas | haut | cardio |
+| Programme  | Faire 3 fois le circuit, 30 secondes de travail par exercice, pas de récup entre les exos. Maximum une minute de recup entre les circuits : <ul><li> gainage sur le dos </li><li> battements sur le dos </li><li> gainage </li><li> superman </li><li> gainage côté droit </li><li> gainage à gauche </li></ul>  | Max de tours en 20 mins <ul><li> 20 squats </li><li> 10 fentes sautées alternées </li><li> 20 fentes (10 jambe droite, 10 jambe gauche) </li><li> 5 squats sautés </li></ul> | Faire le max de tours en 15 minutes <ul><li> 1 pompe/1 dips/1 abdo </li><li> 2 pompes/2 dips/2 abdos </li><li> 3 pompes/3 dips/3 abdos</li><li> et on continue à monter </li></ul> | Faire 10 fois le plus vite possible <ul><li> 30 sec jumping jacks </li><li> 30 sec montée de genoux </li><li> 10 squats </li></ul> | 
+
+### Précisions du chef : 
+* pour le superman, voici un exemple : 
+<img src="/pictures/training/superman.png" alt="Cross Plank" style="max-width:500px"/>
