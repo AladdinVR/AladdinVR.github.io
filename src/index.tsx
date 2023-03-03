@@ -19,7 +19,7 @@ const themeOptions: ThemeOptions = {
       main: "#2a3eb1",
     },
     background: {
-      default: "#f8f8f8",
+      default: "#fff",
       paper: "#264c83",
     },
     text: {
@@ -30,15 +30,16 @@ const themeOptions: ThemeOptions = {
   },
   typography: {
     h1: {
-      fontWeight: 300,
-      fontSize: "3rem",
+      fontWeight: 400,
+      fontSize: "2.5rem",
+      textDecoration: "underline"
     },
     h2: {
       fontWeight: 300,
       fontSize: "2rem",
     },
     h3: {
-      fontWeight: 300,
+      fontWeight: 250,
       fontSize: "1.5rem",
     },
     body1: {
@@ -103,6 +104,8 @@ const themeOptions: ThemeOptions = {
     }
   }
 };
+
+export default themeOptions;
 const theme = createTheme(themeOptions);
 ReactDOM.render(
   <ThemeProvider theme={theme}>

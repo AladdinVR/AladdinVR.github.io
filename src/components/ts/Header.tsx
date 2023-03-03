@@ -4,7 +4,31 @@ import Link from "@mui/material/Link";
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
 import { HeaderProps } from "../../utils/Props";
-import { CssBaseline } from "@mui/material";
+import {
+  createTheme,
+  CssBaseline,
+  Paper,
+  Theme,
+  ThemeOptions,
+  ThemeProvider,
+} from "@mui/material";
+
+const innerThemeOptions: ThemeOptions = {
+  components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: "0px",
+          background: "#fff",
+          position: "sticky",
+          top:"0px",
+          marginBottom: "30px",
+          zIndex: "10"
+        },
+      },
+    },
+  },
+};
 
 const Header = (props: HeaderProps) => {
   const title = "CNC";
@@ -42,8 +66,14 @@ const Header = (props: HeaderProps) => {
     },
   ];
   return (
-    <div>
+    <>
       <CssBaseline />
+      <ThemeProvider
+        theme={(theme: Theme) =>
+          createTheme(theme,innerThemeOptions)
+        }
+      >
+        <Paper elevation={5}>
       <div id="container">
         <Toolbar
           component="nav"
@@ -74,9 +104,9 @@ const Header = (props: HeaderProps) => {
       <Toolbar
         component="nav"
         variant="dense"
-        sx={ window.innerWidth < 600 ? 
-          {justifyContent : "space-between", overflowX: "auto"}
-        : { justifyContent: "space-around", overflowX: "auto" }}
+        sx={window.innerWidth < 600 ?
+          { justifyContent: "space-between", overflowX: "auto" }
+          : { justifyContent: "space-around", overflowX: "auto" }}
       >
         {sections.map((section, index) => (
           <Link
@@ -100,7 +130,9 @@ const Header = (props: HeaderProps) => {
           </Link>
         ))}
       </Toolbar>
-    </div>
+      </Paper>
+      </ThemeProvider>
+    </>
   );
 };
 
