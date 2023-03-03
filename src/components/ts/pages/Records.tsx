@@ -342,7 +342,7 @@ const Records = (props: RecordsProps) => {
           createTheme(theme,innerThemeOptions)
         }
       >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" style={{maxHeight:"60vh"}}>
 
         <CssBaseline />
         {rows !== undefined && rows?.length !== 0 && (
