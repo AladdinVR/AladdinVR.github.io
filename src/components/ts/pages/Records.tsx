@@ -23,59 +23,14 @@ import {
   Toolbar,
   Tooltip,
   Typography,
+  useTheme,
+  Link
 } from "@mui/material";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-const innerThemeOptions: ThemeOptions = {
-  components:{
-    MuiInputLabel:{
-      styleOverrides:{
-        root:{
-          color:"#fadd68",
-          "&.Mui-focused":{
-            color:"#fadd68"
-        }
-        }
-      }
-    },
-    MuiInput:{
-      styleOverrides:{
-        root:{
-          color:"#fadd68",
-          "&:before": {
-            borderColor:"#fadd68",
-          },
-          "&:after":{
-            borderColor: "#fadd68"
-          }
-        },
-      }
-    },
-    MuiSelect:{
-      styleOverrides:{
-        icon:{
-          color:"#fadd68"
-        }
-      }
-    },
-    MuiNativeSelect:{
-      styleOverrides:{
-        icon:{
-          color:"#fadd68"
-        },
-      }
-    },
-    MuiSvgIcon: {
-      styleOverrides: {
-        root: {
-          color: "#fadd68",
-        },
-      },
-    },
-  },
-}
 
 const Records = (props: RecordsProps) => {
+  const globalTheme = useTheme();
   const { t, i18n } = useTranslation();
   const [rows, setRows] = useState<RecordsRows[]>();
   const [sex, setSex] = useState("male");
@@ -145,8 +100,8 @@ const Records = (props: RecordsProps) => {
         variant="dense"
         sx={{ overflowX: "auto", justifyContent: "space-between" }}
       >
-        <GridToolbarFilterButton sx={{ minWidth: "auto", color: "#fadd68" }} onResize={undefined} onResizeCapture={undefined} />
-        <GridToolbarDensitySelector sx={{ minWidth: "auto" , color: "#fadd68"}} onResize={undefined} onResizeCapture={undefined} />
+        <GridToolbarFilterButton sx={{ minWidth: "auto", color: globalTheme.palette.secondary.main }} onResize={undefined} onResizeCapture={undefined} />
+        <GridToolbarDensitySelector sx={{ minWidth: "auto", color: globalTheme.palette.secondary.main }} onResize={undefined} onResizeCapture={undefined} />
         <Select
           labelId="typeSelector"
           id="typeSelector"
@@ -308,6 +263,61 @@ const Records = (props: RecordsProps) => {
     );
   };
 
+
+  const innerThemeOptions: ThemeOptions = {
+    components: {
+      MuiInputLabel: {
+        styleOverrides: {
+          root: {
+            color: globalTheme.palette.secondary.main
+          }
+        }
+      },
+      MuiInput: {
+        styleOverrides: {
+          root: {
+            color: globalTheme.palette.secondary.main,
+            "&:before": {
+              borderColor: globalTheme.palette.secondary.main,
+            },
+            "&:after": {
+              borderColor: globalTheme.palette.secondary.main,
+            }
+          },
+        }
+      },
+      MuiSelect: {
+        styleOverrides: {
+          icon: {
+            color: globalTheme.palette.secondary.main
+          }
+        }
+      },
+      MuiNativeSelect: {
+        styleOverrides: {
+          icon: {
+            color: globalTheme.palette.secondary.main
+          },
+        }
+      },
+      MuiSvgIcon: {
+        styleOverrides: {
+          root: {
+            color: globalTheme.palette.secondary.main,
+          },
+        },
+      },
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            color: globalTheme.palette.secondary.main,
+            backgroundColor: globalTheme.palette.secondary.contrastText
+          }
+        }
+      }
+    },
+  }
+
   useEffect(() => {
     const rows: RecordsRows[] = [];
     fetch(`/records/${type}/${sex}/${category}.csv`)
@@ -337,49 +347,53 @@ const Records = (props: RecordsProps) => {
   }, []);
   return (
     <div className="Core">
+      <CssBaseline />
       <ThemeProvider
-        theme={(theme: Theme) => 
-          createTheme(theme,innerThemeOptions)
+        theme={(theme: Theme) =>
+          createTheme(theme, innerThemeOptions)
         }
       >
-      <Container maxWidth="lg" style={{maxHeight:"60vh"}}>
+        <Container maxWidth="lg" style={{ maxHeight: "60vh" }}>
 
-        <CssBaseline />
-        {rows !== undefined && rows?.length !== 0 && (
-          <div
-            id={"DataGridContainer"}
-            style={{ height: "74vh", width: "100%", marginTop: "1vh" }}
-          >
-            <DataGrid
-              rows={rows}
-              columns={columns}
-              disableSelectionOnClick
-              components={{
-                Toolbar: CustomToolbar,
-              }}
-              hideFooter
-              pageSize={rows.length}
-              localeText={
-                gridLanguage[i18n.language as keyof typeof gridLanguage]
-              }
-              style={{backgroundColor:"#264c83",color:"#fadd68"}}
-            />
-          </div>
-        )}
-        <Typography>
-          Pour mettre à jour les records du club vous pouvez aller{" "}
-          <a
-            href="https://github.com/AladdinVR/aladdinvr.github.io/blob/main/README.md"
-            target={"_blank"}
-            rel={"noreferrer"}
-          >
-            sur ce site
-          </a>
-        </Typography>
 
-      </Container>
-      <Footer />
+          {rows !== undefined && rows?.length !== 0 && (
+            <div
+              id={"DataGridContainer"}
+              style={{ height: "74vh", width: "100%", marginTop: "1vh" }}
+            >
+              <DataGrid
+                rows={rows}
+                columns={columns}
+                disableSelectionOnClick
+                components={{
+                  Toolbar: CustomToolbar,
+                }}
+                hideFooter
+                pageSize={rows.length}
+                localeText={
+                  gridLanguage[i18n.language as keyof typeof gridLanguage]
+                }
+                style={{ backgroundColor: globalTheme.palette.background.paper, color: globalTheme.palette.secondary.main }}
+              />
+            </div>
+          )}
+          <Typography>
+            Pour mettre à jour les records du club vous pouvez aller{" "}
+            <Link
+              href="https://github.com/AladdinVR/aladdinvr.github.io/blob/main/README.md"
+              target={"_blank"}
+              rel={"noreferrer"}
+              underline="hover"
+              color="secondary"
+            >
+              sur ce site
+            </Link>
+          </Typography>
+
+        </Container>
       </ThemeProvider>
+      <Footer />
+
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
 import { HeaderProps } from "../../utils/Props";
 import {
+  IconButton,
   createTheme,
   CssBaseline,
   Paper,
@@ -12,26 +12,10 @@ import {
   ThemeOptions,
   ThemeProvider,
 } from "@mui/material";
-
-const innerThemeOptions: ThemeOptions = {
-  components: {
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          borderRadius: "0px",
-          background: "#fff",
-          position: "sticky",
-          top:"0px",
-          marginBottom: "30px",
-          zIndex: "10"
-        },
-      },
-    },
-  },
-};
+import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
+import Brightness3Icon from '@mui/icons-material/Brightness3';
 
 const Header = (props: HeaderProps) => {
-  const title = "CNC";
   const { t } = useTranslation();
   let sections = [
     {
@@ -65,72 +49,91 @@ const Header = (props: HeaderProps) => {
       weight: props.page === "ranking" ? "Bold" : "14px",
     },
   ];
+  const innerThemeOptions: ThemeOptions = {
+    components: {
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            position: "sticky",
+            top: "0px",
+            marginBottom: "30px",
+            zIndex: "10",
+            backgroundColor: props.theme.palette.background.default,
+            boxShadow: props.themeSelected === "dark" ? "0 1px 6px 1px rgba(255,255,255,0.25)" : "0 1px 6px 1px rgba(0,0,0,0.12)"
+          },
+        },
+      },
+    },
+  };
   return (
     <>
       <CssBaseline />
       <ThemeProvider
         theme={(theme: Theme) =>
-          createTheme(theme,innerThemeOptions)
+          createTheme(theme, innerThemeOptions)
         }
       >
-        <Paper elevation={5}>
-      <div id="container">
-        <Toolbar
-          component="nav"
-          variant="dense"
-          sx={{
-            borderBottom: 1,
-            borderColor: "divider",
-            justifyContent: "space-between",
-            overflowX: "auto",
-          }}
-        >
-          <img
-            src="/favicon.ico"
-            alt="Club's logo"
-            className="favicon"
-            style={
-              window.innerWidth > window.innerHeight
-                ? { width: "5vw", height: "auto" }
-                : { width: "auto", height: "10vh" }
-            }
-          />
-          <Typography component="h2" variant="h4" color="inherit">
-            {title}
-          </Typography>
-          <LanguageSelector />
-        </Toolbar>
-      </div>
-      <Toolbar
-        component="nav"
-        variant="dense"
-        sx={window.innerWidth < 600 ?
-          { justifyContent: "space-between", overflowX: "auto" }
-          : { justifyContent: "space-around", overflowX: "auto" }}
-      >
-        {sections.map((section, index) => (
-          <Link
-            color="inherit"
-            key={section.title}
-            variant="body2"
-            fontWeight={section.weight}
-            onClick={() => {
-              let tempSections = [...sections];
-              tempSections.forEach((_element, index) => {
-                tempSections[index].weight = "14px";
-              });
-              tempSections[index].weight = "Bold";
-              sections = tempSections;
-              props.setPage(section.dest);
-            }}
-            sx={{ p: 1, flexShrink: 0 }}
-            style={{ cursor: "pointer " }}
+        <Paper elevation={5} square>
+          <div id="container">
+            <Toolbar
+              component="nav"
+              variant="dense"
+              sx={{
+                borderBottom: 1,
+                borderColor: "divider",
+                justifyContent: "space-between",
+                overflowX: "auto",
+              }}
+            >
+              <img
+                src="/favicon.ico"
+                alt="Club's logo"
+                className="favicon"
+                style={
+                  window.innerWidth > window.innerHeight
+                    ? { width: "5vw", height: "auto" }
+                    : { width: "auto", height: "10vh" }
+                }
+              />
+              <Toolbar sx={{ alignItems: "flex-end" }}>
+                <LanguageSelector />
+                <IconButton sx={{ ml: 1 }} onClick={() => props.setThemeSelected((theme) => theme === "light" ? "dark" : "light")}>
+                  {props.themeSelected === 'dark' ? <Brightness3Icon /> : <BrightnessHighIcon sx={{ color: "#ffc107" }} />}
+                </IconButton>
+
+              </Toolbar>
+            </Toolbar>
+          </div>
+          <Toolbar
+            component="nav"
+            variant="dense"
+            sx={window.innerWidth < 600 ?
+              { justifyContent: "space-between", overflowX: "auto" }
+              : { justifyContent: "space-around", overflowX: "auto" }}
           >
-            {t(section.title as keyof typeof t)}
-          </Link>
-        ))}
-      </Toolbar>
-      </Paper>
+            {sections.map((section, index) => (
+              <Link
+                color="inherit"
+                key={section.title}
+                variant="body2"
+                fontWeight={section.weight}
+                onClick={() => {
+                  let tempSections = [...sections];
+                  tempSections.forEach((_element, index) => {
+                    tempSections[index].weight = "14px";
+                  });
+                  tempSections[index].weight = "Bold";
+                  sections = tempSections;
+                  props.setPage(section.dest);
+                }}
+                sx={{ p: 1, flexShrink: 0 }}
+                style={{ cursor: "pointer " }}
+              >
+                {t(section.title as keyof typeof t)}
+              </Link>
+            ))}
+          </Toolbar>
+        </Paper>
       </ThemeProvider>
     </>
   );
