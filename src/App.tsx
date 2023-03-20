@@ -7,7 +7,7 @@ import Song from "./components/ts/pages/Song";
 import Join from "./components/ts/pages/Join";
 import Header from "./components/ts/Header";
 import Training from "./components/ts/pages/Training";
-import { ThemeOptions, createTheme, CssBaseline, ThemeProvider, Theme } from "@mui/material";
+import { ThemeOptions, createTheme, CssBaseline, ThemeProvider, Theme, useMediaQuery } from "@mui/material";
 
 interface MarkdownDocument {
   history: {
@@ -33,7 +33,8 @@ interface MarkdownDocument {
 }
 
 const App = () => {
-  const [themeSelected, setThemeSelected] = useState<'light' | 'dark'>('light')
+  const darkThemePrefered = useMediaQuery('@media (prefers-color-scheme: dark)')
+  const [themeSelected, setThemeSelected] = useState<'light' | 'dark'>(darkThemePrefered ? "dark" : "light")
   const [theme, setTheme] = useState<Theme>(createTheme())
   const [markdowns, setMarkdowns] = useState<MarkdownDocument>({
     history: { en: "", fr: "" },
@@ -92,6 +93,9 @@ const App = () => {
     });
   }, []);
 
+  useEffect(() => {
+    setThemeSelected(darkThemePrefered ? "dark" : "light")
+  }, [darkThemePrefered])
   useEffect(() => {
     let palette: ThemeOptions['palette']
     if (themeSelected === 'light') {
