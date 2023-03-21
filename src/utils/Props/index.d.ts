@@ -66,7 +66,7 @@ export type RecordsRows = {
   firstName: string;
   time: string;
   place: string;
-  date: string;
+  date: moment;
 };
 
 export type SelectButtonProps = {

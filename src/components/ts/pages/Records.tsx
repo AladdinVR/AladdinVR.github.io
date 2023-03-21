@@ -28,7 +28,6 @@ import {
 } from "@mui/material";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-
 const Records = (props: RecordsProps) => {
   const globalTheme = useTheme();
   const { t, i18n } = useTranslation();
@@ -71,9 +70,10 @@ const Records = (props: RecordsProps) => {
     {
       field: "time",
       headerName: t("time"),
-      type: "dateTime",
+      type: "string",
       disableColumnMenu: true,
       filterable: false,
+      sortable: false,
     },
     {
       field: "place",
@@ -84,8 +84,11 @@ const Records = (props: RecordsProps) => {
     {
       field: "date",
       headerName: t("date"),
-      type: "date",
+      type: "string",
       filterable: false,
+      sortable: false,
+      flex: 1,
+      minWidth: 100
     },
   ];
   const gridLanguage = {
@@ -100,8 +103,8 @@ const Records = (props: RecordsProps) => {
         variant="dense"
         sx={{ overflowX: "auto", justifyContent: "space-between" }}
       >
-        <GridToolbarFilterButton sx={{ minWidth: "auto", color: globalTheme.palette.secondary.main }} onResize={undefined} onResizeCapture={undefined} />
-        <GridToolbarDensitySelector sx={{ minWidth: "auto", color: globalTheme.palette.secondary.main }} onResize={undefined} onResizeCapture={undefined} />
+        <GridToolbarFilterButton sx={{ minWidth: "auto", color: globalTheme.palette.secondary.main }} />
+        <GridToolbarDensitySelector sx={{ minWidth: "auto", color: globalTheme.palette.secondary.main }} />
         <Select
           labelId="typeSelector"
           id="typeSelector"
@@ -111,6 +114,7 @@ const Records = (props: RecordsProps) => {
           onChange={(e) => {
             setType(e.target.value);
           }}
+          sx={{ mr: "5px" }}
         >
           <MenuItem
             value={"individual"}
@@ -138,6 +142,7 @@ const Records = (props: RecordsProps) => {
             setSex(e.target.value);
           }}
           defaultValue={"male"}
+          sx={{ mr: "5px" }}
         >
           <MenuItem
             value={"male"}
@@ -174,6 +179,7 @@ const Records = (props: RecordsProps) => {
               setCategory(e.target.value);
             }}
             defaultValue={"avenir"}
+            sx={{ mr: "5px" }}
           >
             <MenuItem value={"avenir"}>Avenir</MenuItem>
             <MenuItem value={"poussin"}>Poussin</MenuItem>
@@ -192,6 +198,7 @@ const Records = (props: RecordsProps) => {
             onChange={(e) => {
               setCategory(e.target.value);
             }}
+            sx={{ mr: "5px" }}
           >
             <MenuItem value={"mixt"}>{t("allCategory")}</MenuItem>
           </Select>
@@ -206,6 +213,7 @@ const Records = (props: RecordsProps) => {
               setCategory(e.target.value);
             }}
             defaultValue={"avenirPoussin"}
+            sx={{ mr: "5px" }}
           >
             <MenuItem value={"avenirPoussin"}>Avenir/Poussin</MenuItem>
             <MenuItem value={"benjaminMinime"}>Benjamin/Minime</MenuItem>
@@ -364,12 +372,11 @@ const Records = (props: RecordsProps) => {
               <DataGrid
                 rows={rows}
                 columns={columns}
-                disableSelectionOnClick
+                disableRowSelectionOnClick
                 components={{
                   Toolbar: CustomToolbar,
                 }}
                 hideFooter
-                pageSize={rows.length}
                 localeText={
                   gridLanguage[i18n.language as keyof typeof gridLanguage]
                 }
