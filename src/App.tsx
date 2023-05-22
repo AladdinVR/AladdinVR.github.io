@@ -145,7 +145,6 @@ const App = () => {
         h1: {
           fontWeight: 400,
           fontSize: "2.5rem",
-          textDecoration: "underline"
         },
         h2: {
           fontWeight: 300,
