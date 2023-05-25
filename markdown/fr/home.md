@@ -4,6 +4,8 @@
 
 Le club se prépare pour une nouvelle saison et on vous attend motivés pour cette 50 ème saison !
 
+<img src="/pictures/home/swimming.jpeg" alt="team picture">
+
 * Pour le groupe compétition, les entraînements seront les lundis, mardis et vendredis de 18h30 à 20h00.
 * Pour les loisirs, les entraînements seront les mardis et vendredis de 17h30 à 18h30. 
 
