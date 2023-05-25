@@ -17,10 +17,10 @@ And that's it! With time it will be possible to buy a little more material like 
 
 Concerning the timetable, it depends on the time of the year and your level:
 
-- In June (every Monday, Tuesday, Thursday, Friday):
-  - from 7.15 pm to 8.15 pm for the leisure group
-  - from 7.30 pm to 9 pm for the competition group
-- In July (since the beginning of holidays) and August (at lesast every Monday, Tuesday, Thursday, Friday):
+- In June (every Monday for competition group only, Tuesday and Friday):
+  - from 5.30 pm to 6.30 pm for the leisure group
+  - from 6.30 pm to 8 pm for the competition group
+- In July (since the beginning of holidays) and August (at lesast every Monday, Tuesday, Thursday, Friday). This timetable will be apdated soon:
   - from 6.30 pm to 7.30 pm for the leisure group
   - from 7pm to 8.30pm for the competition group
 

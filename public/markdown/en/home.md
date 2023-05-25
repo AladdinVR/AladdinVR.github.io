@@ -4,6 +4,8 @@
 
 The club is getting ready for a new season and we expect you to be motivated for this 50th season!
 
+<img src="/pictures/home/swimming.jpeg" alt="team picture">
+
 * For the competition group, training will be on Mondays, Tuesdays and Fridays from 6:30 to 8:00 pm.
 * For the leisure group, training will be on Tuesdays and Fridays from 5:30 to 6:30 pm. 
 
