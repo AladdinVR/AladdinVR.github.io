@@ -16,9 +16,9 @@ export type FooterProps = {
 export type HeaderProps = {
   page: string;
   setPage: React.Dispatch<React.SetStateAction<string>>;
-  theme : Theme;
-  themeSelected : "light" | "dark";
-  setThemeSelected :  React.Dispatch<React.SetStateAction<"light"| "dark">>
+  theme: Theme;
+  themeSelected: "light" | "dark";
+  setThemeSelected: React.Dispatch<React.SetStateAction<"light" | "dark">>;
 };
 
 export type HomeProps = {
@@ -79,6 +79,7 @@ export type SelectButtonProps = {
   };
   onChange?: (e: SelectChangeEvent<string>) => void;
   onClick?: (e: SelectChangeEvent<string>) => void;
+  defaultValue: string;
 };
 
 export type SidebarProps = {

@@ -1,6 +1,4 @@
-import {
-  CssBaseline,
-} from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import React, { FunctionComponent } from "react";
 import { useTranslation } from "react-i18next";
 import { availableLanguages } from "../../i18n";
@@ -13,19 +11,20 @@ const LanguageSelector: FunctionComponent<
   return (
     <>
       <CssBaseline />
-        <SelectButton
-          selectItems={{
-            inputLabel: {
-              text: t("lang"),
-            },
-            menuItems: availableLanguages.map((lang, index) => {
-              return { id: index, text: lang };
-            }),
-          }}
-          onChange={(e) => {
-            i18n.changeLanguage(e.target.value as string);
-          }}
-        />
+      <SelectButton
+        selectItems={{
+          inputLabel: {
+            text: t("lang"),
+          },
+          menuItems: availableLanguages.map((lang, index) => {
+            return { id: index, text: lang };
+          }),
+        }}
+        onChange={(e) => {
+          i18n.changeLanguage(e.target.value as string);
+        }}
+        defaultValue={i18n.language}
+      />
     </>
   );
 };
