@@ -51,3 +51,24 @@ Et nagent avec coeur sous l'oeil de leur entraineur !<br/>
 chanter les nageurs<br/>
 Ça fait danser les nageuses ohohoh<br/>
 danser les nageuses<br/>
+
+# Oui, ma gaté
+Based on the rythm of *Bande organisée (de 13'Organisé)*<br/>
+
+Oui, ma gâtée, départ sur le plot, bien sûr qu'ils m'ont raté (gros, bien sûr)<br/>
+Écume sur les flots, dans le bassin, crawleur pro' (crawleur pro')<br/>
+Contre-perf (ah), ma chérie, tu fais une contre-perf<br/>
+Fada, où tu étais quand j’te mettais 3 secondes d’avances (hein)<br/>
+Tu veux nous faire la guerre (hein), c'est le CNC (ah)<br/>
+Ça prend ta médaille, ça prend ton podium, faut pouvoir encaisser (eh, eh)<br/>
+Le départ bippe (brr), plongeon couléew (ew)<br/>
+C'est Céret, bébé, faut savoir se pousser (ah),<br/>
+Wesh alors, ma race, tranquille ou quoi (oh, mathafuck)<br/>
+Saute dans la ligne, j'fais 0 à 100 en 2 secondes 3<br/>
+Bien entraîner, oh, bien préparer, oh, on s'croise, c'est sûr, tu es tétanisé<br/>
+On part ensemble sur le plot, deux secondes après, j't'ai déjà doublé (ah, ah) <br/>
+T'es un petit nageur, Michael Phelps, j'l’est déjà fumé (eh)<br/>
+J'suis le capitaine (eh), j'vais les décapiter (eh)<br/>
+C'est pas Bédarieux (nom de la ville du meeting) (nan), c'est Céret, bébé (pah, pah, pah)<br/>
+En bande organisée, personne peut nous canaliser<br/>
+Dans l’bain, c’est pas des fusées, c’est juste les nageurs du CNC<br/>
