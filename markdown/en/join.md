@@ -26,13 +26,15 @@ Concerning the timetable, it depends on the time of the year and your level:
 
 The two groups above allow the different swimmers to progress at their own pace, this does not prevent the children in the leisure group from competing with the others, quite the contrary!
 
-Registration fees are :
+Fees'information for the coming year will come soon !
+
+<!-- Registration fees are :
 
 - 120 euros for one child
 - 220 euros for two children
 - 300 euros for three children
 
-You can download (in french only) <a href="pdf/ficheInscription.pdf" download> the registration form </a>, <a href="pdf/questionnaireSanté.pdf" download> the health questionnary</a>, and <a href="pdf/attestationQS.pdf" download> the corresponding certificate !</a>
+You can download (in french only) <a href="pdf/ficheInscription.pdf" download> the registration form </a>, <a href="pdf/questionnaireSanté.pdf" download> the health questionnary</a>, and <a href="pdf/attestationQS.pdf" download> the corresponding certificate !</a> -->
 
 <img src="/pictures/join/photoMairie.jpg" alt="members congrated by mayor">
 
