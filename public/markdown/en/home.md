@@ -1,13 +1,13 @@
 # Welcome on the Ceret swimming club's website!
 
-## This summer the club will be back from June 5th!
+## See you next summer !
 
-The club is getting ready for a new season and we expect you to be motivated for this 50th season!
+Meanwhile, you can go on the training section to stay sharp.
 
 <img src="/pictures/home/swimming.jpeg" alt="team picture">
 
 * For the competition group, training will be on Mondays, Tuesdays and Fridays from 6:30 to 8:00 pm.
-* For the leisure group, training will be on Tuesdays and Fridays from 5:30 to 6:30 pm. 
+* For the leisure group, training will be on Tuesdays and Fridays from 5:30 to 6:30 pm.
 
 We look forward to seeing you all this summer!
 

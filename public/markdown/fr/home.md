@@ -1,15 +1,15 @@
 # Bienvenue sur le site du club de natation de Céret !
 
-## Cet été le club revient à partir du 5 Juin !
+## On se voit l'été prochain !
 
-Le club se prépare pour une nouvelle saison et on vous attend motivés pour cette 50 ème saison !
+En attendant vous pouvez consulter la section entraînement pour rester affuté.
 
 <img src="/pictures/home/swimming.jpeg" alt="team picture">
 
 * Pour le groupe compétition, les entraînements seront les lundis, mardis et vendredis de 18h30 à 20h00.
-* Pour les loisirs, les entraînements seront les mardis et vendredis de 17h30 à 18h30. 
+* Pour les loisirs, les entraînements seront les mardis et vendredis de 17h30 à 18h30.
 
-Nous avons hâte de vous voir et revoir nombreux cet été ! 
+Nous avons hâte de vous voir et revoir nombreux cet été !
 
 <img src="/pictures/home/photoTeam2.jpg" alt="team picture">
 
