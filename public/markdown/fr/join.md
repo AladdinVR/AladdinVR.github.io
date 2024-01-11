@@ -26,11 +26,13 @@ Concernant les horaires ils dépendent de la période de l'année et de votre ni
 
 Les deux groupes ci-dessus permettent aux différents nageurs de progresser à leur rythme, cela n'empêche pas les enfants du groupe loisir de faire des compétitions avec les autres, bien au contraire !
 
-Les tarifs d'inscription sont de :
+Les informations sur les tarifs de cette année arriveront prochainement.
+
+<!-- Les tarifs d'inscription sont de :
 
 - 120 euros pour un enfant
 - 220 euros pour deux enfants
-- 300 euros pour trois enfants
+- 300 euros pour trois enfants -->
 
 Vous pouvez télécharger <a href="pdf/ficheInscription.pdf" download> la fiche d'inscription </a>, <a href="pdf/questionnaireSanté.pdf" download> le questionnaire de santé </a>, et <a href="pdf/attestationQS.pdf" download> l'attestation correspondante !</a>
 
